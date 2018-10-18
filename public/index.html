@@ -1,29 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Niodex</title>
 
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEUAAAArQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4eEfPvAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAGZJREFUeAF1jksOAyEMQxPCTPm0wfc/bWVZzarzVn4GLOwvbSZw9vXz+0Bsl6PY9MbzHGMBeLFgeDtvfsJIAlByTQKAiYeCm80KjU6GGBppYBN+H6T+OlEc16PyMHElqMutiN670hdL4AZCzVz76AAAAABJRU5ErkJggg==" type="image/x-icon"/>
-    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEUAAAArQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4eEfPvAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAGZJREFUeAF1jksOAyEMQxPCTPm0wfc/bWVZzarzVn4GLOwvbSZw9vXz+0Bsl6PY9MbzHGMBeLFgeDtvfsJIAlByTQKAiYeCm80KjU6GGBppYBN+H6T+OlEc16PyMHElqMutiN670hdL4AZCzVz76AAAAABJRU5ErkJggg=="
+        type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-<!-- Hero -->
-<section class="hero">
-    <h1>Hey</h1>
-</section>
-<!-- Footer -->
+    <!-- Hero -->
+    <section class="hero">
+
+        <!-- Navbar -->
+        <nav>
+            <div class="navigation">
+                <div class="logo">
+                    <img src="./img/img/temp/logo.png" alt="">
+                </div>
+                <div class="navigation__items">
+                    <ul>
+                        <li>Exchange</li>
+                        <li>Get listed</li>
+                        <li>Vote</li>
+                        <li>FAQ</li>
+                        <li>Start trading</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero__content">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <img src="./img/img/temp/hero.png" alt="">
+                </div>
+                <div class="col-md-6 col-12">
+                    <h1>Trade faster, smarter, safer.</h1>
+                    <p>Duis at tellus at urna condimentum mattis pellentesque id. Molestie a iaculis at erat
+                        pellentesque adipiscing commodo elit.</p>
+                    <button>Start trading</button>
+                    <button>Watch it on video ></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trading Pairs -->
+        <div class="pairs">
+            <div class="pairs__title">
+                <h2>Daily top trading pairs</h2>
+            </div>
+
+            <div class="pairs__quotes">
+                <button>Left</button>
+
+                <div class="pairs__cards">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <button>Right</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Decentralized Exchange -->
+    <section class="decentralized">
+
+        <!-- Title -->
+        <div class="decentralized__title">
+            <h1>The first smart decentralized exchange.</h1>
+        </div>
+
+        <!-- Content -->
+        <div class="decentralized__content">
+            <div class="row">
+                <div class="decentralized__content--text col-md-6">
+                    <h2>INTELLIGENT</h2>
+                    <h1>Get a better sense of the market with our built-in Sentiment Analysis.</h1>
+                    <p>Nunc eget lorem dolor sed viverra ipsum. Tellus integer feugiat scelerisque varius.</p>
+                </div>
+                <div class="decentralized__content--image col-md-6">
+                    <img src="./img/img/temp/decentralized.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Subcontent -->
+        <div class="decentralized__subcontent">
+            <div class="row">
+
+                <!-- NIOnet integration for Sentiment Analysis -->
+                <div class="col-md-6">
+                    <div class="decentralized__subcontent--parts">
+                        <div class="decentralized__icons">
+                            <img src="img/img/temp/icon-decentralized--1.png" alt="">
+                        </div>
+                        <div class="decentralized__text">
+                            <h3>NIOnet integration for Sentiment Analysis</h3>
+                            <p>Egestas dui id ornare arcu odio ut sem nulla pharetra. Mauris a diam maecenas sed enim
+                                ut sem. Sed arcu non odio euismod lacinia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automated Algo-trading features -->
+                <div class="col-md-6">
+                    <div class="decentralized__subcontent--parts">
+                        <div class="decentralized__icons">
+                            <img src="img/img/temp/icon-decentralized--2.png" alt="">
+                        </div>
+                        <div class="decentralized__text">
+                            <h3>Automated Algo-trading features</h3>
+                            <p>Libero id faucibus nisl tincidunt eget nullam non nisi. Lobortis feugiat vivamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- End Subcontent -->
+
+    </section>
+
+    <!-- Market Maker-->
+    <section class="marketMaker">
+
+        <!-- Content -->
+        <div class="marketMaker__content">
+            <div class="row">
+                <div class="decentralized__content--image col-md-6">
+                    <img src="./img/img/temp/marketmaker.png" alt="">
+                </div>
+                <div class="marketMaker__content--text col-md-6">
+                    <h2>LIQUID</h2>
+                    <h1>Trade your favorite assets with a high liquidity and a low spread.</h1>
+                    <p>Velit egestas dui id ornare. Senectus et netus et malesuada fames.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subcontent -->
+        <div class="marketMaker__subcontent">
+            <div class="row">
+
+                <!-- Natively integrated Market Maker -->
+                <div class="col-md-6">
+                    <div class="marketMaker__subcontent--parts">
+                        <div class="marketMaker__icons">
+                            <img src="img/img/temp/icon-mm--1.png" alt="">
+                        </div>
+                        <div class="marketMaker__text">
+                            <h3>Natively integrated Market Maker</h3>
+                            <p>Egestas dui id ornare arcu odio ut sem nulla pharetra. Mauris a diam maecenas sed enim
+                                ut sem. Sed arcu non odio euismod lacinia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0x Protocol liquidity Pool -->
+                <div class="col-md-6">
+                    <div class="marketMaker__subcontent--parts">
+                        <div class="marketMaker__icons">
+                            <img src="img/img/temp/icon-mm--2.png" alt="">
+                        </div>
+                        <div class="marketMaker__text">
+                            <h3>0x Protocol liquidity Pool</h3>
+                            <p>Libero id faucibus nisl tincidunt eget nullam non nisi. Lobortis feugiat vivamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- End Subcontent -->
+
+    </section>
+
+    <!-- SAFU -->
+    <section class="safu">
+
+        <!-- Content -->
+        <div class="safu__content">
+            <div class="row">
+                <div class="safu__content--text col-md-6">
+                    <h2>EASY AND SECURE</h2>
+                    <h1>Your funds are SAFU. And it's easy to trade them.</h1>
+                    <p>Duis at tellus at urna condimentum mattis pellentesque id. Molestie a iaculis at erat
+                        pellentesque adipiscing commodo elit.</p>
+                </div>
+                <div class="safu__content--image col-md-6">
+                    <img src="./img/img/temp/safu.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Subcontent -->
+        <div class="safu__subcontent">
+
+            <!-- Row 1 -->
+            <div class="row">
+
+                <!-- No Signup required -->
+                <div class="col-md-6">
+                    <div class="safu__subcontent--parts">
+                        <div class="decentralized__icons">
+                            <img src="img/img/temp/icon-safu--noSignUp.png" alt="">
+                        </div>
+                        <div class="safu__text">
+                            <h3>No Signup required</h3>
+                            <p>Egestas dui id ornare arcu odio ut sem nulla pharetra. Mauris a diam maecenas sed enim
+                                ut sem. Sed arcu non odio euismod lacinia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P2P Trading on Ethereum Blockchain -->
+                <div class="col-md-6">
+                    <div class="safu__subcontent--parts">
+                        <div class="safu__icons">
+                            <img src="img/img/temp/icon-safu--p2p.png" alt="">
+                        </div>
+                        <div class="safu__text">
+                            <h3>P2P Trading on Ethereum Blockchain</h3>
+                            <p>Libero id faucibus nisl tincidunt eget nullam non nisi. Lobortis feugiat vivamus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+
+                <!-- On-Chain transaction, Off-chain order -->
+                <div class="col-md-6">
+                    <div class="safu__subcontent--parts">
+                        <div class="decentralized__icons">
+                            <img src="img/img/temp/icon-safu--chain.png" alt="">
+                        </div>
+                        <div class="safu__text">
+                            <h3>On-Chain transaction, Off-chain order</h3>
+                            <p>Egestas dui id ornare arcu odio ut sem nulla pharetra. Mauris a diam maecenas sed enim
+                                ut sem. Sed arcu non odio euismod lacinia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessible & Ergonomic User Interface -->
+                <div class="col-md-6">
+                    <div class="safu__subcontent--parts">
+                        <div class="safu__icons">
+                            <img src="img/img/temp/icon-safu--ui.png" alt="">
+                        </div>
+                        <div class="safu__text">
+                            <h3>Accessible & Ergonomic User Interface</h3>
+                            <p>Libero id faucibus nisl tincidunt eget nullam non nisi. Lobortis feugiat vivamus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Subcontent -->
+
+    </section>
+
+    <!-- Connect throught Metamask -->
+    <section class="metaMask">
+
+        <!-- Content -->
+        <div class="metaMask__content">
+            <div class="row">
+
+                <!-- Image -->
+                <div class="metaMask__content--image col-md-6">
+                    <img src="./img/img/temp/metamask.png" alt="">
+                </div>
+
+                <!-- Content -->
+                <div class="metaMask__content--text col-md-6">
+                    <h1>Connect throught Metamask</h1>
+                    <p>Get instantly connected to your wallet in a safe way.</p>
+                    <button>Start Trading</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
 
-<!-- Analytics JUST ADD UA-XXXXX -->
-<script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX', 'auto'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <!-- Community Driven Exchange -->
+    <section class="community">
+
+        <!-- Content -->
+        <div class="community__content">
+            <div class="row">
+                <div class="community__content--image col-md-6">
+                    <img src="./img/img/temp/community.png" alt="">
+                </div>
+
+                <div class="community__content--text col-md-6">
+                    <h2>FAIR</h2>
+                    <h1>We are a Community-driven Exchange.</h1>
+                    <p>Molestie at elementum eu facilisis sed odio morbi quis commodo. Sit amet facilisis magna etiam
+                        tempor orci eu lobortis.</p>
+                    <button>How to vote</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subcontent -->
+        <div class="community__subcontent">
+            <div class="row">
+
+                <!-- Democratic Governance -->
+                <div class="col-md-6">
+                    <div class="community__subcontent--parts">
+                        <div class="community__icons">
+                            <img src="img/img/temp/icon-community--democratic.png" alt="">
+                        </div>
+                        <div class="community__text">
+                            <h3>Democratic Governance </h3>
+                            <p>Egestas dui id ornare arcu odio ut sem nulla pharetra. Mauris a diam maecenas sed enim
+                                ut sem. Sed arcu non odio euismod lacinia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Incentives for Market Maker -->
+                <div class="col-md-6">
+                    <div class="community__subcontent--parts">
+                        <div class="community__icons">
+                            <img src="img/img/temp/icon-community--incentives.png" alt="">
+                        </div>
+                        <div class="community__text">
+                            <h3>Automated Algo-trading features</h3>
+                            <p>Libero id faucibus nisl tincidunt eget nullam non nisi. Lobortis feugiat vivamus.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- End Subcontent -->
+
+    </section>
+
+    <!-- Fees -->
+    <section class="fees">
+
+        <!-- Title -->
+        <div class="fees__title">
+            <h1>Fees</h1>
+            <p>Fair fees with scaling incentives.</p>
+        </div>
+
+        <!-- Content -->
+        <div class="fees__content">
+            <ul>
+                <li>
+                    <p>Maker</p>
+                    <p>0.10%</p>
+                </li>
+                <li>
+                    <p>Taker</p>
+                    <p>0.20%</p>
+                </li>
+                <li>
+                    <p>Market-maker</p>
+                    <p>0.075% rebate</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Button -->
+        <div class="fees__button col-md-4">
+            <button>Start trading</button>
+        </div>
+
+    </section>
+
+    <!-- Video Walkthrough -->
+    <section class="walkthrough">
+
+        <!-- Title -->
+        <div class="walkthrough__title">
+            <h1>NIOdex video Walkthrough</h1>
+            <p>What's better than watching it work in 3 minutes?</p>
+        </div>
+
+        <!-- Content -->
+        <div class="walkthrough__content">
+            <img src="./img/img/temp/video.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- Support -->
+    <section class="support">
+
+        <!-- Title -->
+        <div class="support__title">
+            <h1>Support</h1>
+            <p>What's better than watching it work in 3 minutes?</p>
+        </div>
+
+        <!-- Button -->
+        <button>Visit Help Center</button>
+
+    </section>
+
+    <!-- Trade Now -->
+    <section class="now">
+        <div class="row">
+
+            <!-- Content -->
+            <div class="now__content col-md-8">
+                <h1>Trade now on NIOdex, and enjoy:</h1>
+                <p>Smart trading features, no signup required, friendly user interface, reactive support, and more.</p>
+            </div>
+
+            <!-- Button -->
+            <div class="now__button col-md-4">
+                <button>Start trading</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="./img/img/temp/footer.png" alt="">
+            </div>
+            <div class="col-md-2">
+                <div class="footer__colTitle">
+                    <h3>About</h3>
+                </div>
+                <div class="footer__text">
+                    <ul>
+                        <li>Our Story</li>
+                        <li>Team</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer__colTitle">
+                    <h3>Product</h3>
+                </div>
+                <div class="footer__text">
+                    <ul>
+                        <li>Vote</li>
+                        <li>Get listed</li>
+                        <li>Fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer__colTitle">
+                    <h3>Support</h3>
+                </div>
+                <div class="footer__text">
+                    <ul>
+                        <li>Help Center</li>
+                        <li>FAQ</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer__colTitle">
+                    <h3>Legal</h3>
+                </div>
+                <div class="footer__text">
+                    <ul>
+                        <li>Privacy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer__colTitle">
+                    <h3>Connect with us</h3>
+                </div>
+                <div class="footer__social">
+                   <div class="footer__social--icon"></div>
+                   <div class="footer__social--icon"></div>
+                   <div class="footer__social--icon"></div>
+                   <div class="footer__social--icon"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Analytics JUST ADD Your Own UA-XXXXX -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
-</html>
 
+</html>
