@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16.5px;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 18px;
+  font-family: $font-display;
+
+}
+
+hr {
+    margin-top: 0rem; 
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.noShadow {
+  box-shadow: none!important;
+}
+
+.noPadding {
+  padding: 0!important;
+}
+
+p {
+  color: $black;
+}
+
+.width--100 {
+  width: 100%;
+}
