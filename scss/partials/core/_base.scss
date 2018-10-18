@@ -17,7 +17,8 @@ body {
   font-size: 18px;
   font-family: $font-display;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 hr {
@@ -41,6 +42,9 @@ a:hover {
 
 p {
   color: $font-text;
+  font-family: $font-display;
+  color: $font-text;
+  font-size: 20px;
 }
 
 .width--100 {
