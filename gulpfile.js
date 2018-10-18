@@ -1,6 +1,7 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
+var uglify = require("gulp-uglify");
 
 // Static Server + watching scss/html files
 gulp.task('serve', function() {
@@ -21,4 +22,13 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['sass', 'serve']);
+// JS minify
+gulp.task('minify-js', function () {
+  gulp.src('./scripts/*.js') // path to your files
+  .pipe(uglify())
+  .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('default', ['sass', 'minify-js', 'serve']);
+
+gulp.task('build', ['sass', 'minify-js']);

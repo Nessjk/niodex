@@ -1,0 +1,1 @@
+var goo4="here we go",goo3="here we go",goo2="here we go",goo1="here we go";
