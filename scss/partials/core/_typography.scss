@@ -2,10 +2,48 @@
 // A normal font weight (400 or 500 depending on the font) for most text
 // A heavier font weight (600 or 700) for text you want to emphasize
 
+// Titles big and smaller
 h1 {
-  font-size: 26px;
+  font-family: $font-titles;
+  color: $white;
+  font-size: 48px;
+  font-weight: bold;
 }
 
-h2 {
+.h1--smaller {
+  font-family: $font-titles;
+  color: $white;
+  font-size: 40px;
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
+// Mainly subtitles above the titles of each section
+h2 {
+  font-family: $font-subtitles;
+  color: $font-text;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+// Mainly small paragraphs under sections
+h3 {
+  font-family: $font-subtitles;
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-normal {
+  font-family: $font-display;
+  color: $font-text;
+  font-size: 20px;
+}
+
+.text-small {
+  font-family: $font-display;
+  color: $font-text;
+  font-size: 16px;
 }

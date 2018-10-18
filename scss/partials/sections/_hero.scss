@@ -1,0 +1,75 @@
+
+// Hero
+.hero {
+    background: $blue--darker;
+    min-height: 90vh;
+
+    &__content {
+        & img {
+            height: 80%;
+        }
+    }
+
+    &__buttons {
+        margin-top: 70px;
+
+        & :first-child {
+            margin-right: 25px;
+        }
+    }
+   
+}
+
+// Pairs
+.pairs {
+    &__quotes {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.decentralized {
+    background: $blue--darkest;
+
+    & h1:first-child  {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+}
+
+.marketMaker {
+    background: $blue--darker;
+}
+
+.safu {
+    background: $blue--darkest;
+}
+
+.metaMask {
+    background: $blue--darkest;
+}
+
+.community {
+    background: $blue--darker;
+}
+
+.fees {
+    background: $blue--darkest;
+}
+
+.walkthrough {
+    background: $blue--darkest;
+}
+
+.support {
+    background: $blue--darkest;
+}
+
+.now {
+    background: $blue--darker;
+}
+
+.footer {
+    background: $blue--darker;
+}

@@ -16,7 +16,8 @@ body {
   line-height: 1.6;
   font-size: 18px;
   font-family: $font-display;
-
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 hr {
@@ -39,7 +40,7 @@ a:hover {
 }
 
 p {
-  color: $black;
+  color: $font-text;
 }
 
 .width--100 {

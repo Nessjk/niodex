@@ -1,31 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif|Roboto:400,500");
-.formQuestion {
-  font-family: "Roboto", sans-serif;
-  color: #2B414E;
-  font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 16px; }
-
-.formTitle {
-  font-family: "Noto+Serif", serif;
-  font-size: 32px;
-  color: #2B414E;
-  text-align: center; }
-
-.formFieldSelectFont {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #101010; }
-  .formFieldSelectFont--big {
-    font-size: 30px;
-    color: #101010; }
-  .formFieldSelectFont--medium {
-    font-size: 20px;
-    color: #101010; }
-
-.text--light {
-  color: #828282; }
-
+@import url("https://fonts.googleapis.com/css?family=Karla|Open+Sans:300,400,600,700");
 *,
 *::before,
 *::after {
@@ -41,7 +14,9 @@ body {
   font-weight: 300;
   line-height: 1.6;
   font-size: 18px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 hr {
   margin-top: 0rem;
@@ -59,7 +34,7 @@ a:hover {
   padding: 0 !important; }
 
 p {
-  color: #101010; }
+  color: rgba(255, 255, 255, 0.5); }
 
 .width--100 {
   width: 100%; }
@@ -167,4 +142,131 @@ p {
   margin-top: -6rem !important; }
 
 h1 {
-  font-size: 26px; }
+  font-family: "Karla", sans-serif;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: bold; }
+
+.h1--smaller {
+  font-family: "Karla", sans-serif;
+  color: #FFFFFF;
+  font-size: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold; }
+
+.text-normal {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px; }
+
+.text-small {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px; }
+
+.button {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  min-width: 160px;
+  border-radius: 25px;
+  padding: 10px 40px 10px 40px; }
+  .button:hover {
+    cursor: pointer; }
+
+.button--primary {
+  color: #011625;
+  background: #C0D562; }
+
+.button--nav {
+  color: #C0D562 !important;
+  border: 1px solid #C0D562; }
+
+.button--secondary {
+  color: #FFFFFF;
+  background: none;
+  border: solid 1px #FFFFFF; }
+
+.navigation {
+  height: 50px;
+  padding-top: 50px; }
+  .navigation__logo {
+    display: flex;
+    align-items: center; }
+  .navigation__items {
+    display: flex;
+    align-items: center; }
+    .navigation__items ul {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0rem; }
+      .navigation__items ul > li {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "Karla", sans-serif;
+        list-style: none;
+        margin-right: 60px; }
+      .navigation__items ul > li:last-child {
+        margin-right: 0px; }
+
+.hero {
+  background: #1E2A41;
+  min-height: 90vh; }
+  .hero__content img {
+    height: 80%; }
+  .hero__buttons {
+    margin-top: 70px; }
+    .hero__buttons :first-child {
+      margin-right: 25px; }
+
+.pairs__quotes {
+  display: flex;
+  justify-content: space-between; }
+
+.decentralized {
+  background: #011625; }
+  .decentralized h1:first-child {
+    padding-top: 80px;
+    padding-bottom: 100px; }
+
+.marketMaker {
+  background: #1E2A41; }
+
+.safu {
+  background: #011625; }
+
+.metaMask {
+  background: #011625; }
+
+.community {
+  background: #1E2A41; }
+
+.fees {
+  background: #011625; }
+
+.walkthrough {
+  background: #011625; }
+
+.support {
+  background: #011625; }
+
+.now {
+  background: #1E2A41; }
+
+.footer {
+  background: #1E2A41; }

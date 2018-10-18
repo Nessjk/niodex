@@ -14,13 +14,17 @@
 </head>
 
 <body>
+    
+
+
     <!-- Hero -->
     <section class="hero">
-
+        
+        <div class="container">
         <!-- Navbar -->
         <nav>
-            <div class="navigation">
-                <div class="logo">
+            <div class="navigation d-flex justify-content-between align-content-center">
+                <div class="navigation__logo">
                     <img src="./img/img/temp/logo.png" alt="">
                 </div>
                 <div class="navigation__items">
@@ -29,7 +33,7 @@
                         <li>Get listed</li>
                         <li>Vote</li>
                         <li>FAQ</li>
-                        <li>Start trading</li>
+                        <li class="button button--nav">Start trading</li>
                     </ul>
                 </div>
             </div>
@@ -38,23 +42,27 @@
         <!-- Hero Content -->
         <div class="hero__content">
             <div class="row">
-                <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
                     <img src="./img/img/temp/hero.png" alt="">
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
                     <h1>Trade faster, smarter, safer.</h1>
                     <p>Duis at tellus at urna condimentum mattis pellentesque id. Molestie a iaculis at erat
                         pellentesque adipiscing commodo elit.</p>
-                    <button>Start trading</button>
-                    <button>Watch it on video ></button>
+                    
+                    <div class="hero__buttons">
+                        <button class="button button--primary">Start trading</button>
+                        <button class="button button--secondary">Watch it on video ></button>
+                    </div>
+                
                 </div>
             </div>
         </div>
 
         <!-- Trading Pairs -->
         <div class="pairs">
-            <div class="pairs__title">
-                <h2>Daily top trading pairs</h2>
+            <div class="pairs__title text-center">
+                <h3>Daily top trading pairs</h3>
             </div>
 
             <div class="pairs__quotes">
@@ -74,22 +82,25 @@
             </div>
 
         </div>
+        </div>
     </section>
 
     <!-- Decentralized Exchange -->
     <section class="decentralized">
+        <div class="container">
 
+       
         <!-- Title -->
-        <div class="decentralized__title">
+        <div class="decentralized__title text-center">
             <h1>The first smart decentralized exchange.</h1>
         </div>
 
         <!-- Content -->
         <div class="decentralized__content">
             <div class="row">
-                <div class="decentralized__content--text col-md-6">
+                <div class="decentralized__content--text col-md-6 d-flex flex-column justify-content-center">
                     <h2>INTELLIGENT</h2>
-                    <h1>Get a better sense of the market with our built-in Sentiment Analysis.</h1>
+                    <h1 class="h1--smaller">Get a better sense of the market with our built-in Sentiment Analysis.</h1>
                     <p>Nunc eget lorem dolor sed viverra ipsum. Tellus integer feugiat scelerisque varius.</p>
                 </div>
                 <div class="decentralized__content--image col-md-6">
@@ -131,7 +142,7 @@
 
             </div>
         </div> <!-- End Subcontent -->
-
+    </div>
     </section>
 
     <!-- Market Maker-->

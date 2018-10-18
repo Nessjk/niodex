@@ -1,0 +1,32 @@
+.button {
+    font-family: $font-buttons;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+
+    min-width: 160px;
+    border-radius: 25px;
+
+    padding: 10px 40px 10px 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.button--primary {
+    color: $blue--darkest;
+    background: $citric;
+}
+
+.button--nav {
+    color: $citric!important;
+    border: 1px solid $citric;
+}
+
+.button--secondary {
+    color: $white;
+    background: none;
+    
+    border: solid 1px  $white;
+}
