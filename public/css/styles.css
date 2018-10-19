@@ -331,6 +331,9 @@ h3 {
 .pairs__quotes {
   display: flex;
   justify-content: space-between; }
+  .pairs__quotes--buttons {
+    height: 50px;
+    width: 50px; }
 
 .decentralized,
 .marketMaker,
@@ -460,6 +463,9 @@ h3 {
 .footer {
   background: #1E2A41;
   padding-bottom: 100px; }
+  .footer img {
+    width: 150px;
+    height: 25px; }
   .footer__colTitle h3 {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px; }
