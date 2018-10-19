@@ -1,0 +1,80 @@
+.container--form {
+    max-width: 872px;
+}
+
+.fillOut {
+    background: $blue--dark;
+    padding-top: 80px;
+    padding-bottom: 10px;
+
+    &__title {
+        max-width: 834px;
+    }
+
+    &__content {
+        margin-bottom: 100px;
+        margin-top: 50px;
+
+        &--text {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+        }
+    }
+}
+
+.fillOutForm {
+    background: $blue--dark;
+
+    & form {
+        & label {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Karla", sans-serif;
+        }
+
+        & input, textarea {
+            border-radius :10px;
+            background-color: #555F73;
+            border: none;
+            padding: 1.75rem 1.5rem;
+            outline: none;
+            resize: none;
+            color: $white;
+        }
+
+        & input:focus, textarea:focus {
+            background-color:rgb(147, 157, 177);
+            outline: none;
+            border: none;
+            box-shadow: none;
+            color: $black;
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 47.666667%;
+        max-width: 46.666667%;
+    }
+}
+
+.form--button {
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
+.form--closeButton {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Karla", sans-serif;
+
+    position: absolute;
+    right: 0;
+    padding: 45px 40px;
+}

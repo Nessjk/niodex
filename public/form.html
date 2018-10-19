@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEUAAAArQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4eEfPvAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAGZJREFUeAF1jksOAyEMQxPCTPm0wfc/bWVZzarzVn4GLOwvbSZw9vXz+0Bsl6PY9MbzHGMBeLFgeDtvfsJIAlByTQKAiYeCm80KjU6GGBppYBN+H6T+OlEc16PyMHElqMutiN670hdL4AZCzVz76AAAAABJRU5ErkJggg=="
+        type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="fillOutFormContainer">
+
+        <!-- Close button -->
+        <div class="form--closeButton">
+            
+                &times Close
+            
+        </div>
+
+        <!-- Fill Out -->
+        <section class="fillOut">
+            <div class="container">
+
+                <!-- Token Exchange Content -->
+                <div class="fillOut__content">
+
+                    <!-- Title -->
+                    <div class="fillOut__title text-center mx-auto">
+                        <h1>Fill out our listing form</h1>
+                        <p>You can get listed by having your users vote using our voting tokens.</p>
+                    </div>
+
+                </div>
+        </section>
+
+        <!-- The Form -->
+        <div class="fillOutForm">
+
+
+            <div class="container container--form ">
+                <form>
+
+                    <!-- Name & Project -->
+                    <div class="form-row justify-content-between">
+                        <div class="form-group col-md-5 ">
+                            <label for="FullName">FullName</label>
+                            <input type="text" class="form-control" id="FullName" name="fname">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="project">Project</label>
+                            <input type="text" class="form-control" id="project">
+                        </div>
+                    </div>
+
+                    <!-- URL & email -->
+                    <div class="form-row justify-content-between">
+                        <div class="form-group col-md-5">
+                            <label for="url">URL</label>
+                            <input type="email" class="form-control" id="url">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="notRequired">- not required</span></label>
+                        <textarea type="text" class="form-control" id="message" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="field1">Field 1</label>
+                        <input type="text" class="form-control" id="field1">
+                    </div>
+                    <div class="form-group">
+                        <label for="field2">Field 2</label>
+                        <input type="text" class="form-control" id="field2">
+                    </div>
+                    <div class="form-group">
+                        <label for="field3">Field 1</label>
+                        <input type="text" class="form-control" id="field3">
+                    </div>
+                    <div class="form-group">
+                        <label for="field4">Field 1</label>
+                        <input type="text" class="form-control" id="field4">
+                    </div>
+
+                    <div class="form-group">
+                        DROP your docs here
+                    </div>
+
+                    <div class="form-group">
+                        <p class="text-small">Data Privacy Policy: Your informations won't be shared with any company
+                            or individuals.</p>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form--button mx-auto text-center">
+                        <button type="submit" class="button button--primary">Send my request</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Analytics JUST ADD Your Own UA-XXXXX -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
