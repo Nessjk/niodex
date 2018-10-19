@@ -60,3 +60,10 @@ p {
 .width--100 {
   width: 100%;
 }
+
+.circle--40 {
+  background: $white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
