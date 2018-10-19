@@ -627,11 +627,16 @@ h3 {
   padding-top: 20px;
   padding-bottom: 150px; }
 
-.form--closeButton {
+.form--closeButton button {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: bold;
   font-family: "Karla", sans-serif;
   position: absolute;
   right: 0;
-  padding: 45px 40px; }
+  padding: 45px 40px;
+  border: none;
+  outline: none;
+  background: transparent; }
+  .form--closeButton button:hover {
+    cursor: pointer; }
