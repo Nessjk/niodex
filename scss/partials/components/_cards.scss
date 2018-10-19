@@ -1,0 +1,23 @@
+// Token Exchange card type
+
+.card--type-1 {
+    min-width: 550px;
+    min-height: 370px;
+    padding: 40px 44px;
+    background: rgba(30, 42, 65, 1);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+
+    & p {
+        font-family: "Open Sans", sans-serif;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 16px;
+    }
+}

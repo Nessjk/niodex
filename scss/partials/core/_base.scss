@@ -30,6 +30,16 @@ hr {
 
 a:hover {
   text-decoration: none;
+  color: $font-text!important;
+}
+
+a {
+  color: $font-text;
+}
+
+.underline {
+  
+    border-bottom: 1px solid $font-text;
 }
 
 .noShadow {

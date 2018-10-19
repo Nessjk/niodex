@@ -26,7 +26,14 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5) !important; }
+
+a {
+  color: rgba(255, 255, 255, 0.5); }
+
+.underline {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
 .noShadow {
   box-shadow: none !important; }
@@ -201,12 +208,30 @@ h3 {
 
 .button--nav {
   color: #C0D562 !important;
-  border: 1px solid #C0D562; }
+  border: 1px solid #C0D562;
+  background: transparent; }
 
 .button--secondary {
   color: #FFFFFF;
   background: none;
   border: solid 1px #FFFFFF; }
+
+.card--type-1 {
+  min-width: 550px;
+  min-height: 370px;
+  padding: 40px 44px;
+  background: #1e2a41;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); }
+  .card--type-1 p {
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px; }
 
 .navigation {
   height: 50px;
@@ -230,6 +255,48 @@ h3 {
         margin-right: 60px; }
       .navigation__items ul > li:last-child {
         margin-right: 0px; }
+
+.table-dark {
+  background-color: transparent; }
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: none; }
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: solid 1px rgba(255, 255, 255, 0.2); }
+
+.table-dark td, .table-dark th, .table-dark thead th {
+  border-color: rgba(255, 255, 255, 0.2); }
+
+.table-dark tr:last-child {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2); }
+
+.table td, .table th {
+  padding: .75rem 0 0.75rem 0; }
+
+.table tr td:last-child {
+  text-align: right;
+  text-decoration: underline; }
+
+.table th {
+  vertical-align: top;
+  border-top: none; }
+
+.table tr th:last-child {
+  text-align: right; }
+
+.table--noLines {
+  color: white;
+  font-weight: bold; }
+
+.table--noLines.table td,
+.table--noLines.table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: none !important; }
 
 .hero {
   background: #1E2A41;
@@ -459,34 +526,53 @@ h3 {
   padding-bottom: 100px;
   padding-top: 10px; }
 
-.table-dark {
-  background-color: transparent; }
+.getListed {
+  background: #1E2A41;
+  padding-bottom: 100px; }
+  .getListed__title {
+    max-width: 634px; }
+  .getListed__circle {
+    border-radius: 50%;
+    background: #C6C6C6;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 30px; }
+  .getListed__content {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
 
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: none; }
-
-.table td, .table th {
-  padding: .75rem;
-  vertical-align: top;
-  border-top: solid 1px rgba(255, 255, 255, 0.2); }
-
-.table-dark td, .table-dark th, .table-dark thead th {
-  border-color: rgba(255, 255, 255, 0.2); }
-
-.table-dark tr:last-child {
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2); }
-
-.table td, .table th {
-  padding: .75rem 0 0.75rem 0; }
-
-.table tr td:last-child {
-  text-align: right;
-  text-decoration: underline; }
-
-.table th {
-  vertical-align: top;
-  border-top: none; }
-
-.table tr th:last-child {
-  text-align: right; }
+.tokenExchange,
+.joinThem {
+  background: #011625;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .tokenExchange__title,
+  .joinThem__title {
+    max-width: 834px; }
+  .tokenExchange__content,
+  .joinThem__content {
+    margin-bottom: 100px; }
+    .tokenExchange__content--text,
+    .joinThem__content--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+  .tokenExchange__subcontent,
+  .joinThem__subcontent {
+    padding-bottom: 105px; }
+    .tokenExchange__subcontent--parts,
+    .joinThem__subcontent--parts {
+      display: flex; }
+      .tokenExchange__subcontent--parts :first-child,
+      .joinThem__subcontent--parts :first-child {
+        margin-right: 8px; }
+  .tokenExchange__text,
+  .joinThem__text {
+    margin-top: 8px; }
+    .tokenExchange__text p,
+    .joinThem__text p {
+      font-family: "Open Sans", sans-serif;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 16px; }
