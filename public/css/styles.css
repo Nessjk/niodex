@@ -240,6 +240,13 @@ h3 {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px; }
 
+:root {
+  --gutter: 20px; }
+
+@media (max-width: 1024px) {
+  .pairs__quotes--buttons {
+    display: none; } }
+
 .pairs__cards > ul {
   display: flex;
   justify-content: space-between;
@@ -251,6 +258,21 @@ h3 {
     display: flex;
     padding: 20px;
     margin-right: 15px; }
+
+@media (max-width: 575px) {
+  .pairs__cards ul {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(5, calc(85% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter)); }
+  .pairs__cards > li {
+    width: 250px; }
+  .pairs__cards > li:last-child {
+    margin-right: 20px; } }
 
 .pairs--text {
   margin-right: 24px; }
@@ -281,6 +303,29 @@ h3 {
 .pair--volume {
   color: rgba(255, 255, 255, 0.5); }
 
+:root {
+  --gutter: 20px; }
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start; }
+
+.app > * {
+  grid-column: 2 / -2; }
+
+.hs {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+  grid-template-rows: minmax(150px, 1fr);
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter)); }
+
 .navigation {
   padding-top: 50px;
   padding-bottom: 100px; }
@@ -306,6 +351,9 @@ h3 {
         margin-right: 60px; }
       .navigation__items ul > li:last-child {
         margin-right: 0px; }
+    @media (max-width: 1024px) {
+      .navigation__items {
+        display: none; } }
 
 .table-dark {
   background-color: transparent; }
@@ -351,7 +399,8 @@ h3 {
 
 .hero {
   background: #1E2A41;
-  min-height: 90vh; }
+  min-height: 90vh;
+  overflow: hidden; }
   .hero__content {
     padding-bottom: 50px; }
     .hero__content img {
@@ -360,6 +409,9 @@ h3 {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      @media (max-width: 1024px) {
+        .hero__content--images {
+          opacity: 0.1; } }
       .hero__content--images > :first-child {
         transform: scale(1.25);
         margin-left: -40%; }
@@ -367,6 +419,10 @@ h3 {
         position: absolute;
         margin-left: -8%;
         transform: scale(1.1); }
+    @media (max-width: 1024px) {
+      .hero__content--text {
+        position: absolute;
+        text-align: center; } }
   .hero__buttons {
     margin-top: 70px; }
     .hero__buttons :first-child {

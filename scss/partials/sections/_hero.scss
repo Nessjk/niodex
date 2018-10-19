@@ -3,6 +3,7 @@
 .hero {
     background: $blue--darker;
     min-height: 90vh;
+    overflow: hidden;
 
     &__content {
         padding-bottom: 50px;
@@ -16,6 +17,10 @@
             flex-direction: column;
             justify-content: center;
 
+            @media (max-width: 1024px) {
+               opacity: 0.1;
+            }
+
             // SVG Background
             & > :first-child {
                 transform: scale(1.25);
@@ -25,6 +30,13 @@
                 position: absolute;
                 margin-left: -8%;
                 transform: scale(1.1);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            &--text { 
+                position: absolute;
+                text-align: center;
             }
         }
 

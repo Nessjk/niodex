@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
+
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 
@@ -23,16 +23,26 @@
 }
 
 // Pairs 
+:root {
+    --gutter: 20px;
+}
+
+@media (max-width: 1024px) {
+    .pairs__quotes--buttons {
+        display: none;
+    }
+}
+
+
 .pairs__cards {
-    & > ul {
+    &>ul {
         display: flex;
         justify-content: space-between;
         list-style: none;
 
-        & > li {
+        &>li {
             background: $blue--dark;
             min-height: 120px;
-            //width: 260px;
             border-radius: 10px;
 
             display: flex;
@@ -41,12 +51,38 @@
             margin-right: 15px;
         }
     }
+
+    @media (max-width: 575px) {
+        & ul {
+            display: grid;
+            grid-gap: calc(var(--gutter) / 2);
+            grid-template-columns: repeat(5, calc(85% - var(--gutter) * 2));
+            grid-template-rows: minmax(150px, 1fr);
+
+            overflow-x: scroll;
+            scroll-snap-type: x proximity;
+            padding-bottom: calc(.75 * var(--gutter));
+            margin-bottom: calc(-.25 * var(--gutter));
+        }
+
+        & > li {
+            width: 250px;
+        }
+
+        & > li:last-child {
+            margin-right: 20px;
+        }
+
+        
+
+    }
 }
 
 // Dual sides
 .pairs--text {
     margin-right: 24px;
 }
+
 .pairs--icon {
     display: flex;
     align-items: center;
@@ -65,18 +101,48 @@
     display: flex;
     justify-content: space-between;
 }
+
 .pair--price {
     font-weight: bold;
 }
 
 .up {
-    color:rgba(60, 180, 88, 1);
+    color: rgba(60, 180, 88, 1);
 }
 
 .down {
-    color:rgba(233, 77, 77, 1);
+    color: rgba(233, 77, 77, 1);
 }
 
 .pair--volume {
     color: $font-text;
+}
+
+:root {
+    --gutter: 20px;
+}
+
+.app {
+    padding: var(--gutter) 0;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    align-content: start;
+}
+
+.app>* {
+    grid-column: 2 / -2;
+}
+
+
+.hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
 }
