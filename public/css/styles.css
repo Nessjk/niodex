@@ -847,6 +847,13 @@ h3 {
     margin: auto;
     max-width: 506px;
     margin-bottom: 50px; }
+  @media (max-width: 768px) {
+    .howTo__subcontent--parts {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto; } }
 
 .coming,
 .pastVotes {
