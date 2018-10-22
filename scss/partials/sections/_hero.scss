@@ -267,12 +267,35 @@
 .safu {
     background: $blue--darkest;
     padding-top: 200px;
+    margin-bottom: -1px;
 }
 
+// MetaMask
 .metaMask {
     background: $blue--darkest;
     padding-top: 60px;
-    padding-bottom: 180px;
+
+    min-height: 550px;
+    overflow: hidden;
+
+    &__content {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        &--image {
+            position: relative;
+        }
+    }
+
+}
+
+.bg-metasmask {
+    margin-left: -60%;
+    position: absolute;
+    margin-top: -15%;
 }
 
 .community {

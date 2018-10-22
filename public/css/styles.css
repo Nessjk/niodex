@@ -632,12 +632,27 @@ h3 {
 
 .safu {
   background: #011625;
-  padding-top: 200px; }
+  padding-top: 200px;
+  margin-bottom: -1px; }
 
 .metaMask {
   background: #011625;
   padding-top: 60px;
-  padding-bottom: 180px; }
+  min-height: 550px;
+  overflow: hidden; }
+  .metaMask__content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+    .metaMask__content--image {
+      position: relative; }
+
+.bg-metasmask {
+  margin-left: -60%;
+  position: absolute;
+  margin-top: -15%; }
 
 .community {
   background: #1E2A41;
