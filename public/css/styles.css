@@ -503,13 +503,8 @@ h3 {
 .marketMaker,
 .safu,
 .community {
-  background: #011625; }
-  @media (max-width: 1440px) {
-    .decentralized,
-    .marketMaker,
-    .safu,
-    .community {
-      padding-top: 300px; } }
+  background: #011625;
+  padding-top: 300px; }
   @media (max-width: 1200px) {
     .decentralized,
     .marketMaker,
