@@ -32,7 +32,8 @@
 
             // SVG Background
             & > :first-child {
-                transform: scale(1.25);
+                //transform: scale(1.25);
+                transform: scale(1.08);
                 margin-left: -40%;
 
                 @media (max-width: 1024px) {

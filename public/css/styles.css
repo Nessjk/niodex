@@ -435,7 +435,7 @@ h3 {
       .hero__content--images {
         opacity: 0.1; } }
     .hero__content--images > :first-child {
-      transform: scale(1.25);
+      transform: scale(1.08);
       margin-left: -40%; }
       @media (max-width: 1024px) {
         .hero__content--images > :first-child {
