@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1923" height="236" viewBox="0 0 1923 236">
+  <defs>
+    <rect id="bg-hero--small-a" width="2087" height="258"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-73)">
+    <mask id="bg-hero--small-b" fill="#fff">
+      <use xlink:href="#bg-hero--small-a"/>
+    </mask>
+    <g fill="#1E2A41" fill-rule="nonzero" mask="url(#bg-hero--small-b)">
+      <g transform="translate(73 -856)">
+        <path d="M0,45 L1921.688,45 L1923,910.326 C1923,910.326 1708.586,1053.126 974.023,1089.769 C376.083,1109.495 0.318,976.029 0.318,976.029 L0,45 Z" opacity=".3"/>
+        <path d="M0,0.219242376 L1921.688,0.219242376 L1921.688,922.083997 C1921.688,922.083997 1092.288,1203.09475 0,922.083997 L0,0.219242376 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

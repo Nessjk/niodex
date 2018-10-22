@@ -251,6 +251,14 @@ h3 {
   .pairs__quotes--buttons {
     display: none; } }
 
+.pairs {
+  position: absolute;
+  width: 100%;
+  /* bottom: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .pairs__cards > ul {
   display: flex;
   justify-content: space-between;
@@ -410,39 +418,40 @@ h3 {
 .hero {
   background: #1E2A41;
   min-height: 90vh;
-  overflow: hidden; }
-  .hero__content {
-    padding-bottom: 50px; }
-    @media (max-width: 455px) {
-      .hero__content {
-        padding-bottom: 80px; } }
-    @media (max-width: 400px) {
-      .hero__content {
-        padding-bottom: 180px; } }
-    .hero__content img {
-      height: 80%; }
-    .hero__content--images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      @media (max-width: 1024px) {
-        .hero__content--images {
-          opacity: 0.1; } }
-      .hero__content--images > :first-child {
-        transform: scale(1.25);
-        margin-left: -40%; }
-      .hero__content--images > :last-child {
-        position: absolute;
-        margin-left: -8%;
-        transform: scale(1.1); }
+  position: relative; }
+  @media (max-width: 455px) {
+    .hero__content {
+      padding-bottom: 80px; } }
+  @media (max-width: 400px) {
+    .hero__content {
+      padding-bottom: 180px; } }
+  .hero__content img {
+    height: 80%; }
+  .hero__content--images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     @media (max-width: 1024px) {
-      .hero__content--text {
-        position: absolute;
-        text-align: left; } }
-    @media (max-width: 375px) {
-      .hero__content--text {
-        padding-top: 115px;
-        padding-top: 160px; } }
+      .hero__content--images {
+        opacity: 0.1; } }
+    .hero__content--images > :first-child {
+      transform: scale(1.25);
+      margin-left: -40%; }
+      @media (max-width: 1024px) {
+        .hero__content--images > :first-child {
+          transform: scale(1.08); } }
+    .hero__content--images > :last-child {
+      position: absolute;
+      margin-left: -8%;
+      transform: scale(1.1); }
+  @media (max-width: 1024px) {
+    .hero__content--text {
+      position: absolute;
+      text-align: left; } }
+  @media (max-width: 375px) {
+    .hero__content--text {
+      padding-top: 115px;
+      padding-top: 160px; } }
   .hero__buttons {
     margin-top: 70px; }
     .hero__buttons :first-child {
@@ -459,12 +468,27 @@ h3 {
       .hero__buttons {
         margin-top: 0px;
         padding-bottom: 115px; } }
+  .hero__svg {
+    position: absolute;
+    bottom: -99px;
+    width: 100%;
+    z-index: 999 !important;
+    height: 100px; }
 
 .hero__content .row > :last-child {
   max-width: 648px; }
 
+.bg-hero--small {
+  position: absolute;
+  overflow: hidden;
+  width: 100%; }
+
 .pairs {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  z-index: 999; }
+  @media (max-width: 768px) {
+    .pairs {
+      padding-top: 100px; } }
   .pairs__title {
     margin-bottom: 30px; }
   .pairs__quotes {
@@ -480,12 +504,59 @@ h3 {
 .safu,
 .community {
   background: #011625; }
+  @media (max-width: 1440px) {
+    .decentralized,
+    .marketMaker,
+    .safu,
+    .community {
+      padding-top: 300px; } }
+  @media (max-width: 1200px) {
+    .decentralized,
+    .marketMaker,
+    .safu,
+    .community {
+      padding-top: 200px; } }
+  @media (max-width: 992px) {
+    .decentralized,
+    .marketMaker,
+    .safu,
+    .community {
+      padding-top: 300px; } }
+  @media (max-width: 768px) {
+    .decentralized,
+    .marketMaker,
+    .safu,
+    .community {
+      padding-top: 400px; } }
+  @media (max-width: 758px) {
+    .decentralized,
+    .marketMaker,
+    .safu,
+    .community {
+      padding-top: 200px; } }
+  @media (max-width: 670px) {
+    .decentralized,
+    .marketMaker,
+    .safu,
+    .community {
+      padding-top: 100px; } }
+  @media (max-width: 550px) {
+    .decentralized,
+    .marketMaker,
+    .safu,
+    .community {
+      padding-top: 50px; } }
   .decentralized h1:first-child,
   .marketMaker h1:first-child,
   .safu h1:first-child,
   .community h1:first-child {
-    padding-top: 80px;
     padding-bottom: 100px; }
+    @media (max-width: 758px) {
+      .decentralized h1:first-child,
+      .marketMaker h1:first-child,
+      .safu h1:first-child,
+      .community h1:first-child {
+        padding-top: 200px; } }
   .decentralized__content,
   .marketMaker__content,
   .safu__content,
