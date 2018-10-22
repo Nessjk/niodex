@@ -12,6 +12,10 @@
     &:hover {
         cursor: pointer;
     }
+
+    &:focus,:active {
+        outline: none;
+    }
 }
 
 .button--primary {

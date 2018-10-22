@@ -10,7 +10,16 @@ h1 {
   font-weight: bold;
 }
 
-.h1--smaller {
+.h2--smaller {
+  font-family: $font-titles;
+  color: $white;
+  font-size: 40px;
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+h2 {
   font-family: $font-titles;
   color: $white;
   font-size: 40px;
@@ -20,7 +29,7 @@ h1 {
 }
 
 // Mainly subtitles above the titles of each section
-h2 {
+h4 {
   font-family: $font-subtitles;
   color: $font-text;
   font-size: 20px;

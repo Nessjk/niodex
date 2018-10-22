@@ -171,7 +171,7 @@ h1 {
   font-size: 48px;
   font-weight: bold; }
 
-.h1--smaller {
+.h2--smaller {
   font-family: "Karla", sans-serif;
   color: #FFFFFF;
   font-size: 40px;
@@ -179,6 +179,13 @@ h1 {
   padding-bottom: 0px; }
 
 h2 {
+  font-family: "Karla", sans-serif;
+  color: #FFFFFF;
+  font-size: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+h4 {
   font-family: "Open Sans", sans-serif;
   color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
@@ -211,6 +218,8 @@ h3 {
   padding: 10px 40px 10px 40px; }
   .button:hover {
     cursor: pointer; }
+  .button:focus, .button :active {
+    outline: none; }
 
 .button--primary {
   color: #011625;
@@ -228,8 +237,8 @@ h3 {
   border: solid 1px #FFFFFF; }
 
 .card--type-1 {
-  min-width: 550px;
-  min-height: 370px;
+  max-width: 550px;
+  max-height: 370px;
   padding: 40px 44px;
   background: #1e2a41;
   text-align: center;
@@ -239,6 +248,9 @@ h3 {
   align-items: center;
   border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 768px) {
+    .card--type-1 {
+      margin-bottom: 16px; } }
   .card--type-1 p {
     font-family: "Open Sans", sans-serif;
     color: rgba(255, 255, 255, 0.5);
@@ -910,7 +922,8 @@ h3 {
 .joinThem {
   background: #011625;
   padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  margin-bottom: -1px; }
   .tokenExchange__title,
   .joinThem__title {
     max-width: 834px; }

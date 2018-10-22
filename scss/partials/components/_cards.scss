@@ -1,8 +1,8 @@
 // Token Exchange card type
 
 .card--type-1 {
-    min-width: 550px;
-    min-height: 370px;
+    max-width: 550px;
+    max-height: 370px;
     padding: 40px 44px;
     background: rgba(30, 42, 65, 1);
     text-align: center;
@@ -14,6 +14,10 @@
 
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+        margin-bottom: 16px;
+    }
 
     & p {
         font-family: "Open Sans", sans-serif;
