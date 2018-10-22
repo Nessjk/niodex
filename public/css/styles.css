@@ -648,6 +648,12 @@ h3 {
   padding-bottom: 160px;
   min-height: 550px;
   overflow: hidden; }
+  @media (min-width: 1440px) {
+    .metaMask {
+      padding-bottom: 350px; } }
+  @media (min-width: 992px) {
+    .metaMask {
+      padding-bottom: 200px; } }
   @media (max-width: 768px) {
     .metaMask {
       padding-left: 15px;
@@ -710,17 +716,43 @@ h3 {
   background: #011625;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-bottom: -1px; }
+  margin-bottom: -1px;
+  position: relative; }
   .walkthrough__title {
-    margin-bottom: 100px; }
-  .walkthrough__content img {
-    width: 100px;
-    height: 100px; }
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 999; }
+  .walkthrough__content {
+    position: relative;
+    z-index: 999; }
+    .walkthrough__content img:first-child {
+      width: 100px;
+      height: 100px; }
+
+.bg-video--big {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  z-index: 9; }
+  @media (max-width: 500px) {
+    .bg-video--big {
+      height: 60%;
+      top: 160px; } }
+  @media (min-width: 500px) {
+    .bg-video--big {
+      height: 80%;
+      top: 80px; } }
+  @media (min-width: 1440px) {
+    .bg-video--big {
+      height: auto;
+      top: 0px; } }
 
 .support {
   background: #011625;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  margin-bottom: -1px; }
   .support__title {
     margin: auto;
     max-width: 732px;
@@ -729,7 +761,8 @@ h3 {
 .now {
   background: #1E2A41;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  margin-bottom: -1px; }
   .now__content {
     padding-bottom: 50px; }
 
