@@ -638,8 +638,13 @@ h3 {
 .metaMask {
   background: #011625;
   padding-top: 60px;
+  padding-bottom: 160px;
   min-height: 550px;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .metaMask {
+      padding-left: 15px;
+      padding-right: 15px; } }
   .metaMask__content {
     height: 400px;
     display: flex;
@@ -648,20 +653,34 @@ h3 {
     justify-content: center; }
     .metaMask__content--image {
       position: relative; }
+      .metaMask__content--image img {
+        width: 130%;
+        margin-top: 0%; }
+        @media (min-width: 1024px) {
+          .metaMask__content--image img {
+            margin-top: -5%; } }
+        @media (max-width: 880px) {
+          .metaMask__content--image img {
+            display: none; } }
 
 .bg-metasmask {
   margin-left: -60%;
   position: absolute;
   margin-top: -15%; }
+  @media (min-width: 768px) {
+    .bg-metasmask {
+      margin-left: -40%; } }
 
 .community {
   background: #1E2A41;
-  padding-top: 100px; }
+  padding-top: 100px;
+  position: relative; }
 
 .fees {
   background: #011625;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-bottom: -1px; }
   .fees__content {
     max-width: 650px;
     margin-top: 90px;
@@ -683,7 +702,8 @@ h3 {
 .walkthrough {
   background: #011625;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  margin-bottom: -1px; }
   .walkthrough__title {
     margin-bottom: 100px; }
   .walkthrough__content img {

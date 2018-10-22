@@ -274,9 +274,15 @@
 .metaMask {
     background: $blue--darkest;
     padding-top: 60px;
+    padding-bottom: 160px;
 
     min-height: 550px;
     overflow: hidden;
+
+    @media (max-width: 768px){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     &__content {
         height: 400px;
@@ -287,12 +293,31 @@
 
         &--image {
             position: relative;
+
+            & img {
+                width: 130%;
+                margin-top: 0%;
+
+                @media (min-width: 1024px){
+                    margin-top: -5%;
+                }
+               
+                @media (max-width: 880px){
+                    display: none;
+                }
+            
         }
     }
 
 }
+}
 
 .bg-metasmask {
+
+    @media (min-width: 768px){
+        margin-left: -40%;
+    }
+
     margin-left: -60%;
     position: absolute;
     margin-top: -15%;
@@ -301,12 +326,15 @@
 .community {
     background: $blue--darker;
     padding-top: 100px;
+    position: relative;
 }
 
+// FEES
 .fees {
     background: $blue--darkest;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
+    margin-bottom: -1px;
 
     &__content {
         max-width: 650px;
@@ -338,10 +366,12 @@
     }
 }
 
+// WALKTHROUGH
 .walkthrough {
     background: $blue--darkest;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-bottom: -1px;
 
     &__title {
         margin-bottom: 100px;
