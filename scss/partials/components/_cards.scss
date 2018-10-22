@@ -86,6 +86,10 @@
 .pairs--icon {
     display: flex;
     align-items: center;
+
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 // Inside card
