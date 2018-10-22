@@ -419,6 +419,13 @@ h3 {
   background: #1E2A41;
   min-height: 90vh;
   position: relative; }
+  @media (min-width: 1024px) {
+    .hero__content > div:first-child {
+      justify-content: flex-start !important; } }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    .hero__content {
+      text-align: center;
+      margin: auto; } }
   @media (max-width: 455px) {
     .hero__content {
       padding-bottom: 80px; } }
@@ -727,7 +734,11 @@ h3 {
     padding-bottom: 50px; }
 
 .now .row {
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2); }
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  margin-bottom: -1px; }
+  @media (max-width: 768px) {
+    .now .row {
+      border-bottom: none; } }
 
 .footer {
   background: #1E2A41;
