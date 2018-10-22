@@ -758,11 +758,19 @@ h3 {
     max-width: 732px;
     margin-bottom: 50px; }
 
+.bg-footer {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  z-index: 999 !important;
+  height: 100px; }
+
 .now {
   background: #1E2A41;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-bottom: -1px; }
+  margin-bottom: -1px;
+  position: relative; }
   .now__content {
     padding-bottom: 50px; }
 

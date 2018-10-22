@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 351.493">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #1e2a41;
+      }
+
+      .cls-2 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <g id="bg_footer-cta_section" transform="translate(0 -8589.819)">
+    <g id="Groupe_229" data-name="Groupe 229" transform="translate(0 8589.819)">
+      <path id="Tracé_72" data-name="Tracé 72" class="cls-1" d="M-172,8723.127s434.513-58.209,914.513-50.769S1748,8752.887,1748,8752.887v243.339H-172Z" transform="translate(172 -8644.732)"/>
+      <path id="Tracé_73" data-name="Tracé 73" class="cls-2" d="M-172,8729.972s754.259-46.335,1234.259-37.817S1748,8764.04,1748,8764.04V9042.6H-172Z" transform="translate(172 -8691.109)"/>
+    </g>
+  </g>
+</svg>

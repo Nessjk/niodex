@@ -448,11 +448,19 @@
     }
 }
 
+.bg-footer {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    z-index: 999 !important;
+    height: 100px;
+}
 .now {
     background: $blue--darker;
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: -1px;
+    position: relative;
 
     &__content {
         padding-bottom: 50px;
