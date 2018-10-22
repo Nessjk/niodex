@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="200" viewBox="0 0 1920 200">
+  <defs>
+    <rect id="bg-liquid--top-a" width="2028" height="200"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-51)">
+    <mask id="bg-liquid--top-b" fill="#fff">
+      <use xlink:href="#bg-liquid--top-a"/>
+    </mask>
+    <g fill="#1E2A41" fill-rule="nonzero" mask="url(#bg-liquid--top-b)">
+      <g transform="translate(51)">
+        <path d="M-3.41060513e-13,146.757142 C-3.41060513e-13,146.757142 946.261,-125.763858 1919.688,71.9221417 L1919.688,1065.05914 C1774.752,1149.99114 1599.875,1201.55914 1164.423,1230.46714 C488.661,1272.02414 707.894,1190.27814 -3.41060513e-13,1196.84914 L-3.41060513e-13,146.757142 Z" opacity=".3" transform="rotate(180 959.844 621.151)"/>
+        <path d="M0,149.671 C0,149.671 1082.3,-96.576 1919.688,78.028 L1919.688,1028.813 C1208.785,1227.848 509.533,1229.654 0,1154.983 L0,149.671 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

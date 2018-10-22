@@ -608,13 +608,31 @@ h3 {
       color: rgba(255, 255, 255, 0.5);
       font-size: 16px; }
 
+.decentralized {
+  padding-bottom: 100px; }
+
 .marketMaker {
   background: #1E2A41;
-  padding-top: 100px; }
+  padding-top: 100px;
+  position: relative; }
+
+.bg-liquid--top {
+  position: absolute;
+  top: -99px;
+  width: 100%;
+  z-index: 999 !important;
+  height: 100px; }
+
+.bg-liquid--bottom {
+  position: absolute;
+  bottom: -99px;
+  width: 100%;
+  z-index: 999 !important;
+  height: 100px; }
 
 .safu {
   background: #011625;
-  padding-top: 100px; }
+  padding-top: 200px; }
 
 .metaMask {
   background: #011625;
