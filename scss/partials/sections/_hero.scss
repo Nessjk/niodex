@@ -471,9 +471,6 @@
     border-bottom: solid 1px  rgba(255,255,255,0.2);
     margin-bottom: -1px;
 
-    @media (max-width: 768px) {
-        border-bottom: none;
-    }
 }
 
 .footer {
@@ -504,4 +501,12 @@
             }
         }
     }
+}
+
+.footer.col-md-2.col-6 {
+
+    @media (max-width: 768px) {
+        padding-bottom: 30px;
+    }
+   
 }
