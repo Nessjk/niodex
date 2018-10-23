@@ -1,6 +1,7 @@
 .vote {
     background: $blue--darker;
     padding-bottom: 100px;
+    position: relative;
 
     &__circle {
         border-radius: 50%;
@@ -11,11 +12,23 @@
     }
 
     &__content {
-        min-height: 60vh;
+        min-height: 30vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
+
+    &__svg {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        z-index: 999 !important;
+        height: 100px;
+    }
+}
+
+.bg-vote--small {
+    width: 100%;
 }
 
 .howTo,
@@ -61,6 +74,8 @@
 
 .howTo {
     background: $blue--darkest;
+    padding-top: 250px;
+    padding-bottom: 120px;
 
     &__title {
         margin: auto;
@@ -115,11 +130,29 @@
 }
 
 .coming {
-    padding-bottom: 100px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.bg-coming--top {
+    position: absolute;
+    top: -99px;
+    width: 100%;
+    z-index: 999 !important;
+    height: 100px;
+}
+
+.bg-coming--bottom {
+    position: absolute;
+    bottom: -99px;
+    width: 100%;
+    z-index: 999 !important;
+    height: 100px;
 }
 
 .pastVotes {
     background: $blue--darkest;
     padding-bottom: 100px;
-    padding-top: 10px; // weird bug
+    padding-top: 80px;
 }

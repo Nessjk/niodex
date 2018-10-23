@@ -810,7 +810,8 @@ h3 {
 
 .vote {
   background: #1E2A41;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  position: relative; }
   .vote__circle {
     border-radius: 50%;
     background: #C6C6C6;
@@ -818,10 +819,19 @@ h3 {
     width: 80px;
     margin-bottom: 30px; }
   .vote__content {
-    min-height: 60vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     flex-direction: column; }
+  .vote__svg {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    z-index: 999 !important;
+    height: 100px; }
+
+.bg-vote--small {
+  width: 100%; }
 
 .howTo,
 .coming {
@@ -854,7 +864,9 @@ h3 {
       font-size: 16px; }
 
 .howTo {
-  background: #011625; }
+  background: #011625;
+  padding-top: 250px;
+  padding-bottom: 120px; }
   .howTo__title {
     margin: auto;
     max-width: 506px;
@@ -894,12 +906,28 @@ h3 {
           border-bottom: solid 1px rgba(255, 255, 255, 0.2); }
 
 .coming {
-  padding-bottom: 100px; }
+  padding-top: 5px;
+  padding-bottom: 50px;
+  position: relative; }
+
+.bg-coming--top {
+  position: absolute;
+  top: -99px;
+  width: 100%;
+  z-index: 999 !important;
+  height: 100px; }
+
+.bg-coming--bottom {
+  position: absolute;
+  bottom: -99px;
+  width: 100%;
+  z-index: 999 !important;
+  height: 100px; }
 
 .pastVotes {
   background: #011625;
   padding-bottom: 100px;
-  padding-top: 10px; }
+  padding-top: 80px; }
 
 .getListed {
   background: #1E2A41;
