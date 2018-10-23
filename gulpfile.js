@@ -29,6 +29,6 @@ gulp.task('minify-js', function () {
   .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('default', ['sass', 'minify-js', 'serve']);
+gulp.task('default', ['sass','serve']);
 
 gulp.task('build', ['sass', 'minify-js']);
