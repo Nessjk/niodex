@@ -825,7 +825,7 @@ h3 {
     flex-direction: column; }
   .vote__svg {
     position: absolute;
-    bottom: -50px;
+    bottom: -99px;
     width: 100%;
     z-index: 999 !important;
     height: 100px; }
@@ -931,7 +931,8 @@ h3 {
 
 .getListed {
   background: #1E2A41;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  position: relative; }
   .getListed__title {
     max-width: 634px; }
   .getListed__circle {
@@ -941,16 +942,23 @@ h3 {
     width: 80px;
     margin-bottom: 30px; }
   .getListed__content {
-    min-height: 60vh;
     display: flex;
     justify-content: center;
     flex-direction: column; }
 
+.list__svg {
+  position: absolute;
+  bottom: -90px;
+  width: 100%;
+  z-index: 999 !important;
+  height: 100px; }
+  .list__svg img {
+    width: 100%; }
+
 .tokenExchange,
 .joinThem {
   background: #011625;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   margin-bottom: -1px; }
   .tokenExchange__title,
   .joinThem__title {
@@ -980,6 +988,10 @@ h3 {
       font-family: "Open Sans", sans-serif;
       color: rgba(255, 255, 255, 0.5);
       font-size: 16px; }
+
+.tokenExchange {
+  padding-top: 80px;
+  padding-top: 320px; }
 
 .container--form {
   max-width: 872px; }

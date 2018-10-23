@@ -1,6 +1,7 @@
 .getListed {
     background: $blue--darker;
     padding-bottom: 100px;
+    position: relative;
 
     &__title {
         max-width: 634px;
@@ -15,19 +16,32 @@
     }
 
     &__content {
-        min-height: 60vh;
+        //min-height: 40vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
+
+    
 }
 
+.list__svg {
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+    z-index: 999 !important;
+    height: 100px;
+
+    & img {
+        width: 100%;
+    }
+}
 
 .tokenExchange,
 .joinThem {
     background: $blue--darkest;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    //padding-top: 80px;
+    padding-bottom: 100px;
     margin-bottom: -1px;
 
     &__title {
@@ -70,6 +84,12 @@
            
         }
     }
+}
+
+.tokenExchange {
+    padding-top: 80px;
+    padding-top: 320px;
+    
 }
 
 .joinThem {
