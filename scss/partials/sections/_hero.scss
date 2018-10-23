@@ -10,7 +10,7 @@
         //padding-bottom: 50px;
 
         & > div:first-child {
-            @media (min-width: 1024px) {
+            @media (min-width: 1025px) { // important one for 1px smooth transition from 1025 to 1024
                 justify-content: flex-start!important;
             }
         }

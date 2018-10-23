@@ -1,0 +1,101 @@
+
+$lightgrey: #f2f0ed;
+$midgrey: #535f67;
+$darkgrey: #382f2d;
+$white: #fff;
+$black: #000;
+$default-spacing: 25px;
+$screen-xs: 1024px;
+$button-size: 20px;
+$squish-speed: 300ms;
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+.toggle-menu {
+    display: none;
+    z-index: 9999!important;
+    @media (max-width: $screen-xs) {
+      display: block;
+    }
+      cursor: pointer;
+      user-select: none;
+      padding: $default-spacing;
+        background: none;
+        border: none;
+        position: absolute;
+      top: 0;
+      right: 0;
+  
+      &:hover,
+      &:focus {
+      outline: 0;
+          .burger-lines {
+                background-color: $citric;
+              
+              &:before,
+              &:after {
+                background-color: $citric;
+              }
+              
+          }
+      }
+      
+      &.active {
+      
+          .burger-lines {
+              background: transparent; // fade away the middle line
+           
+              &:before,
+              &:after {
+                  transition: top $squish-speed $ease-out-quart, transform $squish-speed $squish-speed $ease-out-quart;
+                  top: 0;
+                  width: $button-size;
+              }
+  
+              &:before {
+                  transform: rotate3d(0,0,1,45deg) scale(1.1); 
+              }
+  
+              &:after {
+                  transform: rotate3d(0,0,1,-45deg) scale(1.1); 
+              }
+          }
+              
+      }
+  
+  }
+  
+  .burger-lines {
+      display: inline-block;
+      cursor: pointer;
+      user-select: none;
+      transition: all $squish-speed ease;
+      width: $button-size;
+      height: 2px;
+      background-color: $citric;
+      position: relative;
+      top: -2px;
+      width: 30px;
+  
+      &:before,
+      &:after {
+          content: '';
+          display: inline-block;
+          width: $button-size;
+          height: 2px;
+          background-color: $citric;
+          position: absolute;
+          left: 0;
+          width: 30px;
+          transform-origin: 50% 50%;
+          transition: top $squish-speed $squish-speed $ease-out-quart, transform $squish-speed $ease-out-quart, background-color $squish-speed $ease-out-quart;
+      }
+  
+      &:before { 
+            top: 6px; 
+      }
+      &:after { 
+            top: -6px; 
+      }
+  
+  }
