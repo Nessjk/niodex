@@ -857,12 +857,16 @@ h3 {
     margin-bottom: 30px; }
   .vote__content {
     min-height: 30vh;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column; }
+  .vote__title p {
+    margin: auto;
+    max-width: 506px; }
   .vote__svg {
     position: absolute;
-    bottom: -99px;
+    bottom: -50px;
     width: 100%;
     z-index: 999 !important;
     height: 100px; }
@@ -884,7 +888,7 @@ h3 {
       justify-content: center; }
   .howTo__subcontent,
   .coming__subcontent {
-    padding-bottom: 105px; }
+    padding-bottom: 85px; }
     .howTo__subcontent--parts,
     .coming__subcontent--parts {
       display: flex; }
@@ -902,7 +906,7 @@ h3 {
 
 .howTo {
   background: #011625;
-  padding-top: 250px;
+  padding-top: 200px;
   padding-bottom: 120px; }
   .howTo__title {
     margin: auto;
@@ -963,7 +967,7 @@ h3 {
 
 .pastVotes {
   background: #011625;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   padding-top: 80px; }
 
 .getListed {
