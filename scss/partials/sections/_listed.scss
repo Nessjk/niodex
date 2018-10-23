@@ -1,10 +1,11 @@
 .getListed {
     background: $blue--darker;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     position: relative;
 
     &__title {
         max-width: 634px;
+        padding-bottom: 40px;
     }
 
     &__circle {
@@ -17,6 +18,8 @@
 
     &__content {
         //min-height: 40vh;
+       
+        padding-top: 50px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -42,6 +45,7 @@
     background: $blue--darkest;
     //padding-top: 80px;
     padding-bottom: 100px;
+    
     margin-bottom: -1px;
 
     &__title {
@@ -88,7 +92,11 @@
 
 .tokenExchange {
     padding-top: 80px;
-    padding-top: 320px;
+    padding-top: 240px;
+
+    @media (min-width: 1840px) {
+        padding-top: 320px;
+    }
     
 }
 
