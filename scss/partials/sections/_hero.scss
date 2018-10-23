@@ -2,7 +2,7 @@
 // Hero
 .hero {
     background: $blue--darker;
-    min-height: 90vh;
+    min-height: 80vh;
 
     position: relative;
 
@@ -121,7 +121,7 @@
 
 // Pairs
 .pairs {
-    padding-bottom: 50px;
+    //padding-bottom: 50px;
     z-index: 999;
 
     @media (max-width: 768px) {
@@ -182,7 +182,8 @@
 
     & h1:first-child  {
         //padding-top: 80px;
-        padding-bottom: 100px;
+        //padding-bottom: 100px;
+        padding-bottom: 200px;
         
       
        
@@ -193,7 +194,9 @@
     }
 
     &__content {
-        margin-bottom: 100px;
+        //margin-bottom: 100px;
+        margin-bottom: 160px;
+        margin-bottom: 200px;
 
         &--text {
             display: flex;
@@ -278,6 +281,8 @@
 .safu {
     background: $blue--darkest;
     padding-top: 200px;
+    padding-top: 300px;
+
     margin-bottom: -1px;
 }
 
@@ -352,6 +357,7 @@
     background: $blue--darkest;
     padding-top: 150px;
     padding-bottom: 100px;
+    padding-bottom: 120px;
     margin-bottom: -1px;
 
     &__content {
@@ -439,6 +445,7 @@
     background: $blue--darkest;
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-bottom: 150px;
     margin-bottom: -1px;
 
     &__title {

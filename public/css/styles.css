@@ -389,7 +389,7 @@ h3 {
 
 .navigation {
   padding-top: 50px;
-  padding-bottom: 100px; }
+  padding-bottom: 20px; }
   .navigation__logo {
     display: flex;
     align-items: center; }
@@ -462,7 +462,7 @@ h3 {
 
 .hero {
   background: #1E2A41;
-  min-height: 90vh;
+  min-height: 80vh;
   position: relative; }
   @media (min-width: 1024px) {
     .hero__content > div:first-child {
@@ -536,7 +536,6 @@ h3 {
   width: 100%; }
 
 .pairs {
-  padding-bottom: 50px;
   z-index: 999; }
   @media (max-width: 768px) {
     .pairs {
@@ -597,7 +596,7 @@ h3 {
   .marketMaker h1:first-child,
   .safu h1:first-child,
   .community h1:first-child {
-    padding-bottom: 100px; }
+    padding-bottom: 200px; }
     @media (max-width: 758px) {
       .decentralized h1:first-child,
       .marketMaker h1:first-child,
@@ -608,7 +607,8 @@ h3 {
   .marketMaker__content,
   .safu__content,
   .community__content {
-    margin-bottom: 100px; }
+    margin-bottom: 160px;
+    margin-bottom: 200px; }
     .decentralized__content--text,
     .marketMaker__content--text,
     .safu__content--text,
@@ -685,6 +685,7 @@ h3 {
 .safu {
   background: #011625;
   padding-top: 200px;
+  padding-top: 300px;
   margin-bottom: -1px; }
 
 .metaMask {
@@ -738,6 +739,7 @@ h3 {
   background: #011625;
   padding-top: 150px;
   padding-bottom: 100px;
+  padding-bottom: 120px;
   margin-bottom: -1px; }
   .fees__content {
     max-width: 650px;
@@ -797,6 +799,7 @@ h3 {
   background: #011625;
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-bottom: 150px;
   margin-bottom: -1px; }
   .support__title {
     margin: auto;
@@ -822,9 +825,6 @@ h3 {
 .now .row {
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   margin-bottom: -1px; }
-  @media (max-width: 768px) {
-    .now .row {
-      border-bottom: none; } }
 
 .footer {
   background: #1E2A41;
@@ -840,6 +840,10 @@ h3 {
     .footer__text ul > li {
       color: #FFFFFF;
       font-size: 16px; }
+
+@media (max-width: 768px) {
+  .footer.col-md-2.col-6 {
+    padding-bottom: 30px; } }
 
 .vote {
   background: #1E2A41;
