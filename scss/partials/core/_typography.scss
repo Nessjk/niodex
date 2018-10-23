@@ -8,6 +8,7 @@ h1 {
   color: $white;
   font-size: 48px;
   font-weight: bold;
+  letter-spacing: -0.05em;
 }
 
 .h2--smaller {
@@ -26,14 +27,17 @@ h2 {
   
   padding-top: 0px;
   padding-bottom: 0px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
 }
 
 // Mainly subtitles above the titles of each section
-h4 {
+.p--highlight {
   font-family: $font-subtitles;
   color: $font-text;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
+
   text-transform: uppercase;
 }
 
@@ -51,8 +55,18 @@ h3 {
   font-size: 20px;
 }
 
-.text-small {
+.text-small, .p--content {
   font-family: $font-display;
   color: $font-text;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+// Tables or other
+.text-link {
+  font-family: $font-display;
+  color: $white;
+  font-weight: bold;
+  text-decoration: underline;
   font-size: 16px;
 }

@@ -47,6 +47,7 @@
 }
 
 .pairs__cards {
+
     &>ul {
         display: flex;
         justify-content: space-between;
@@ -59,6 +60,7 @@
 
             display: flex;
             padding: 20px;
+            justify-content: space-between;
 
             margin-right: 15px;
         }
@@ -69,8 +71,32 @@
             display: grid;
             grid-gap: calc(var(--gutter) / 2);
             grid-template-columns: repeat(5, calc(85% - var(--gutter) * 2));
-            grid-template-rows: minmax(150px, 1fr);
+            grid-template-rows: minmax(120px, 1fr);
 
+            overflow-x: scroll;
+            scroll-snap-type: x proximity;
+            padding-bottom: calc(.75 * var(--gutter));
+            margin-bottom: calc(-.25 * var(--gutter));
+        }
+
+        & > li {
+            width: 250px;
+        }
+
+        & > li:last-child {
+            margin-right: 20px;
+        }
+
+        
+
+    }
+  
+    @media (max-width: 400px) {
+        & ul {
+            display: grid;
+            grid-gap: calc(var(--gutter) / 2);
+            grid-template-columns: repeat(5, calc(100% - var(--gutter) * 2));
+            grid-template-rows: minmax(110px, 1fr);
             overflow-x: scroll;
             scroll-snap-type: x proximity;
             padding-bottom: calc(.75 * var(--gutter));
@@ -90,17 +116,29 @@
     }
 }
 
+.pairs__cards.app {
+    padding-left: 20px;
+}
+
 // Dual sides
 .pairs--text {
     margin-right: 24px;
+
+    // @media (max-width: 575px) {
+    //     width: 80%;
+    // }
 }
 
 .pairs--icon {
     display: flex;
     align-items: center;
 
-    @media (max-width: 400px) {
-        display: none;
+    // @media (max-width: 400px) {
+    //     display: none;
+    // }
+
+    @media (max-width: 575px) {
+        width: 20%;
     }
 }
 
@@ -142,8 +180,23 @@
     padding: var(--gutter) 0;
     display: grid;
     grid-gap: var(--gutter) 0;
-    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    //grid-template-columns: var(--gutter) 1fr var(--gutter);
+    padding-left: 20px;
     align-content: start;
+
+    @media (max-width: 475px) {
+        padding: var(--gutter) 0;
+        display: grid;
+        grid-gap: var(--gutter) 0;
+       
+        align-content: start;
+    }
+
+    
+
+    & > ul > li:last-child {
+        padding-right: 20px;
+    }
 }
 
 .app>* {

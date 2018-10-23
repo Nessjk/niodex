@@ -11,6 +11,8 @@
     border-bottom: none;
 }
 
+// see typography sheet for table text-links
+
 .table td, .table th {
     padding: .75rem;
     vertical-align: top;
@@ -31,7 +33,7 @@
 
 .table tr td:last-child {
     text-align: right;
-    text-decoration: underline;
+    //text-decoration: underline;
 }
 
 .table th {
