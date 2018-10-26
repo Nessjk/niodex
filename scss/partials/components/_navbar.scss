@@ -44,6 +44,12 @@
                 font-family: $font-titles;
                 list-style: none;
                 margin-right: 60px;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    opacity:0.5;
+                    cursor: pointer;
+                }
 
                 @media (max-width: 1024px) {
                     margin-right: 0px;

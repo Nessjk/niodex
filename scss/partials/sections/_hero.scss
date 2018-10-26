@@ -505,6 +505,12 @@
             & > li {
                 color: $white;
                 font-size: 16px;
+                line-height: 1.8;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity:0.5;
+                }
             }
         }
     }

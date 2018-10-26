@@ -64,6 +64,11 @@
             justify-content: space-between;
 
             margin-right: 15px;
+
+            &:hover {
+                cursor: pointer;
+                background: #4E5B75;
+            }
         }
     }
 

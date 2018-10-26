@@ -69,4 +69,9 @@ h3 {
   font-weight: bold;
   text-decoration: underline;
   font-size: 16px;
+
+  &:hover {
+    cursor: pointer;
+    opacity:0.5;
+  }
 }
