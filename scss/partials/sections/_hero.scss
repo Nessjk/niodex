@@ -327,6 +327,13 @@
         &--image {
             position: relative;
 
+            & img:first-child {
+                position: absolute;
+                left: 0;
+                z-index: 99;
+                width: 100%;
+            }
+
             & img {
                 width: 130%;
                 margin-top: 0%;
@@ -550,4 +557,8 @@
         padding-bottom: 30px;
     }
    
+}
+
+.marketMaker__content {
+    margin-bottom: 60px;
 }

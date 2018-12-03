@@ -840,6 +840,11 @@ h3 {
     justify-content: center; }
     .metaMask__content--image {
       position: relative; }
+      .metaMask__content--image img:first-child {
+        position: absolute;
+        left: 0;
+        z-index: 99;
+        width: 100%; }
       .metaMask__content--image img {
         width: 130%;
         margin-top: 0%; }
@@ -985,6 +990,9 @@ h3 {
 @media (max-width: 768px) {
   .footer.col-md-2.col-6 {
     padding-bottom: 30px; } }
+
+.marketMaker__content {
+  margin-bottom: 60px; }
 
 .vote {
   background: #1E2A41;
