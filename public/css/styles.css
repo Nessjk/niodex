@@ -841,7 +841,16 @@ h3 {
         position: absolute;
         left: 0;
         z-index: 99;
-        width: 100%; }
+        width: 100%;
+        width: 80%;
+        margin: auto; }
+        @media (min-width: 1600px) {
+          .metaMask__content--image img:first-child {
+            margin-top: 80px; } }
+      @media (min-width: 1600px) {
+        .metaMask__content--image img:last-child {
+          width: 100%;
+          margin-top: 0%; } }
       .metaMask__content--image img {
         width: 130%;
         margin-top: 0%; }
@@ -851,6 +860,11 @@ h3 {
         @media (max-width: 880px) {
           .metaMask__content--image img {
             display: none; } }
+      @media (min-width: 1600px) {
+        .metaMask__content--image {
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
 
 .bg-metasmask {
   margin-left: -60%;
