@@ -782,6 +782,9 @@ h3 {
 
 .decentralized {
   padding-bottom: 100px; }
+  @media (max-width: 758px) {
+    .decentralized__title {
+      padding-top: 100px; } }
 
 .marketMaker {
   background: #1E2A41;
