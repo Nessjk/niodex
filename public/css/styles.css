@@ -424,6 +424,10 @@ h3 {
   .navigation__logo {
     display: flex;
     align-items: center; }
+    @media (max-width: 768px) {
+      .navigation__logo {
+        position: absolute;
+        left: 0; } }
     .navigation__logo img {
       width: 205px;
       height: 35px; }
@@ -768,13 +772,19 @@ input#coin_terms {
       .marketMaker h1:first-child,
       .safu h1:first-child,
       .community h1:first-child {
-        padding-top: 200px; } }
+        padding-top: 0px !important; } }
   .decentralized__content,
   .marketMaker__content,
   .safu__content,
   .community__content {
     margin-bottom: 160px;
     margin-bottom: 200px; }
+    @media (max-width: 768px) {
+      .decentralized__content,
+      .marketMaker__content,
+      .safu__content,
+      .community__content {
+        margin-bottom: 60px; } }
     .decentralized__content--text,
     .marketMaker__content--text,
     .safu__content--text,
@@ -782,6 +792,12 @@ input#coin_terms {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+    @media (max-width: 768px) {
+      .decentralized__content--image,
+      .marketMaker__content--image,
+      .safu__content--image,
+      .community__content--image {
+        margin-bottom: 60px; } }
   .decentralized__icons img,
   .marketMaker__icons img,
   .safu__icons img,
@@ -909,6 +925,14 @@ input#coin_terms {
           display: flex;
           justify-content: center;
           align-items: center; } }
+    @media (min-width: 576px) {
+      .metaMask__content--text {
+        max-width: 540px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto; } }
 
 .bg-metasmask {
   margin-left: -60%;
