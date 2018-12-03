@@ -583,6 +583,50 @@ h3 {
   .burger-lines:after {
     top: -6px; }
 
+.table td, .table th {
+  border: none !important;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px; }
+
+.table td:first-child {
+  padding-top: 25px; }
+
+select {
+  border-radius: 10px !important;
+  background-color: #555F73 !important;
+  padding: 1.75rem 1.5rem !important;
+  height: 57px !important;
+  outline: 0 !important;
+  border: none !important;
+  color: white !important; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 0.7;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white !important;
+  opacity: 0.7; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white !important;
+  opacity: 0.7; }
+
+input, textarea {
+  color: black !important; }
+
+.form-check {
+  padding-left: 0 !important; }
+
+input#coin_terms {
+  margin-right: 16px; }
+
 .hero {
   background: #1E2A41;
   min-height: 80vh;

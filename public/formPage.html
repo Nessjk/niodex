@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEUAAAArQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4eEfPvAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAGZJREFUeAF1jksOAyEMQxPCTPm0wfc/bWVZzarzVn4GLOwvbSZw9vXz+0Bsl6PY9MbzHGMBeLFgeDtvfsJIAlByTQKAiYeCm80KjU6GGBppYBN+H6T+OlEc16PyMHElqMutiN670hdL4AZCzVz76AAAAABJRU5ErkJggg=="
+        type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body cz-shortcut-listen="true">
+
+    <!-- Close button -->
+    <div class="form--closeButton">
+        <button aria-label="Close Account Info Modal Box"> &times Close</button>
+    </div>
+
+    <!-- Fill Out -->
+    <section class="fillOut">
+
+        <div class="container">
+
+            <!-- Token Exchange Content -->
+            <div class="fillOut__content">
+
+                <!-- Title -->
+                <div class="fillOut__title text-center mx-auto">
+                    <h1>Payment will be collected after your coin submission is approved.</h1>
+                    <p>Approvals will take a minium of 48 hours.</p>
+                    <p><b>Enter your coin information for submission:</b></p>
+                </div>
+
+            </div>
+    </section>
+
+    <div class="fillOutFormContainer">
+
+
+        <!-- The Form -->
+        <div class="fillOutForm">
+
+
+            <div class="container container--form ">
+
+                <form class="needs-validation" novalidate="" method="post" action="https://dev.rootcow.org/autonjira/order.php">
+
+                    <div class="table-responsive-md">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Coin Symbol: *</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="coin_symbol" placeholder="COIN"
+                                                name="coin_symbol" value="" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Coin or Token: *</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <select name="coin_project" id="coin_project" class="form-control">
+                                                <option value="COIN"> Coin</option>
+                                                <option value="TOKEN"> Token</option>
+                                            </select>
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Coin name: *</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_name" id="coin_name"
+                                                placeholder="COIN NAME" value="" required="">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Listing fee and package: *</td>
+                                    <td>
+                                        <select name="coin_listing_fee" class="form-control" id="coin_listing_fee">
+                                            <option value="1.0">1 BTC: standard fee (7-10 days)</option>
+                                            <option value="2.0">2 BTC: standard fee + 1 BTC promo package(7-10 days)</option>
+                                            <option value="3.0">3 BTC: express fee (48 hours)</option>
+                                            <option value="4.0">4 BTC: express fee (48 hours) + 1 BTC promotion package</option>
+                                            <option value="5.0">5 BTC ICO listing (7-10 days)</option>
+                                            <option value="6.0">6 BTC ICO listing (7-10 days) + 1 BTC promot package</option>
+                                            <option value="0.5">0.5 BTC hard fork fee</option>
+                                        </select>
+                                        <div class="valid-feedback">Valid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Base Chain: (what chain is your coin based upon)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_base_chain" id="coin_base_chain"
+                                                placeholder="Base Chain Name" value="" size="40">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bitcointalk ANN thread: (if applicable)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_ann" id="coin_ann" value=""
+                                                size="40" placeholder="https://bitcointalk.org/index.php?topic=12345">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Betweenblocks ANN thread URL: (if applicable)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_bbann" id="coin_bbann"
+                                                value="" size="40" placeholder="https://betweenblocks/topic/">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail contact:</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_email" id="coin_email"
+                                                value="" size="40" placeholder="coindev@coin.com" required="">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Twitter:</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_twtr" id="coin_twtr"
+                                                value="" size="40" placeholder="https://twitter.com/CoinName">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Homepage URL: *</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_homepage" id="coin_homepage"
+                                                value="" size="40" placeholder="https://coinhomepage.io" required="">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Github URL: *</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_github" id="coin_github"
+                                                value="" size="40" placeholder="https://github.com/CoinName/CoinName"
+                                                required="">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CoinmarketCap URL (if available)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_cmc" id="coin_cmc" value=""
+                                                size="40" placeholder="https://www.coinmarketcap.com/currencies/bitcoin">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Explorer URL: (if applicable)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_explorer" id="coin_explorer"
+                                                value="" size="40" placeholder="https://explorer.coin.com">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Discord URL: (if applicable)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_discord" id="coin_discord"
+                                                value="" size="40" placeholder="https://discord.gg/1234567">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Discord Dev Handle: *</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_discord_dev" id="coin_discord_dev"
+                                                value="" size="40" placeholder="CoinDev#5555" required="">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Logo URL: (32x32 png only)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="coin_logo" id="coin_logo"
+                                                value="" size="40" placeholder="https://coin.com/logo.png">
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <div class="form-check d-flex">
+                                            <input type="checkbox" name="coin_terms" id="coin_terms" value="" required="">
+                                            <div class="invalid-feedback">
+                                                You must agree to terms and conditions before submitting.
+                                            </div>
+                                            <label class="form-check-label" for="exampleCheck1" style="margin-top: -3px;">
+                                                Accept Terms and Conditions
+                                                <br>
+                                                <b>Payment will only come from MagSupport#55555</b>
+                                            </label>
+                                        </div>
+
+
+
+                                        <p>
+                                        </p>
+                                    </td>
+
+                                    <td></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>Comments:</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <textarea name="coin_comments" class="form-control" id="coin_comments" rows="10"
+                                                cols="40"></textarea>
+                                            <div class="valid-feedback">Valid</div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                         
+                            </tbody>
+                        </table>
+
+                        <div class="form--button mx-auto text-center">
+                            <button type="submit" class="button button--type-A">Submit Form</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+
+
+</body>
+
+</html>
