@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vote</title>
+
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEUAAAArQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4rQU4eEfPvAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAGZJREFUeAF1jksOAyEMQxPCTPm0wfc/bWVZzarzVn4GLOwvbSZw9vXz+0Bsl6PY9MbzHGMBeLFgeDtvfsJIAlByTQKAiYeCm80KjU6GGBppYBN+H6T+OlEc16PyMHElqMutiN670hdL4AZCzVz76AAAAABJRU5ErkJggg=="
+        type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- Vote Hero -->
+    <section class="vote">
+
+        <div class="container">
+            <!-- Mobile menu -->
+            <button type="button" id="burger-menu" class="toggle-menu" aria-label="Toggle Mobile Menu">
+                <span class="burger-lines"></span>
+            </button>
+
+                
+            <!-- Navbar -->
+            <nav>
+                <div class="navigation d-flex justify-content-between align-content-center">
+                    <div class="navigation__logo">
+                        <img src="./img/svg/logo-niodex--header.svg" alt="Logo Niodex Header">
+                    </div>
+                    <div class="navigation__items">
+                        <ul>
+                            <li>Exchange</li>
+                            <li>Get listed</li>
+                            <li>Vote</li>
+                            <li>FAQ</li>
+                            <li class="button button--nav">Start trading</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Vote Hero Content -->
+            <div class="vote__content ">
+
+                <!-- Title -->
+                <div class="vote__title text-center">
+                    <div class="vote__circle mx-auto">
+                        <img src="./img/svg/icon-vote--header.svg" alt="">
+                    </div>
+                    <h1>FAQ</h1>
+                    <p>Welcome to our FAQ section. Don't hesitate to reach out to us for more information.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Svg -->
+        <div class="vote__svg">
+            <img class="bg-vote--small" src="./img/svg/bg-hero--small.svg" alt="">
+        </div>
+
+    </section>
+
+    
+    <!-- Token Exchange -->
+    <section class="tokenExchange">
+        <div class="container">
+
+            <!-- Token Exchange Content -->
+            <div class="tokenExchange__content">
+
+                <!-- Title -->
+                <div class="tokenExchange__title d-flex flex-column mx-auto justify-content-center">
+                    <h3>What is the NIOdex?</h3>
+                    <p>The NIOdex is a decentralized hybrid exchange model developed by the Autonio Team. It was designed to be the world’s first “smart DEX”, giving users the ability to use high-frequency market makers and automated trading algorithms on a decentralized exchange.  </p>
+                    <br><br>
+
+                    <h3>Why trade on a decentralized exchange?</h3>
+                    <p>The most common reason is security and self-custody of your own funds while trading. Conventional centralized exchanges such as Binance or Bitmex run through a central server and user funds are held within custody of the exchange. You cannot control or access your private keys for your funds while they are held in a centralized exchange. This means if an exchange is shut down, hacked or encounters major technical problems, you are completely reliant on the exchange returning your assets to you when you withdraw, or reimbursing you out of their own insurance fund. Many exchanges also blacklist users from certain regions or countries, making it impossible for users from some areas to trade on exchanges with a quality UI and high volume. Decentralized exchanges are more resistant to this kind of censorship.</p>
+                    <br><br>
+
+                    <h3>Is the NIOdex completely decentralized? </h3>
+                    <p>Currently, the NIOdex is using a hybrid model which uses on-chain settlement for p2p trading and off chain order matching. As blockchain scaling technology continue to make advances, Autonio will move to a fully decentralizes model, however at this time a hybridized model will offer the user the best combination of features that meets Autonio’s specifications. With current technology it would be  extremely difficult for Autonio to offer features like a native market maker or 0% fees for order cancellations on a fully decentralized exchange.  </p>   
+                    <br><br>
+
+                    <h3>How do I sign up to trade?</h3>
+                    <p>Simply log onto <a href="https://niodex.com" class="underline">www.niodex.com</a> with a Metamask browser plugin installed. You can begin depositing ERC-20 tokens and Ethereum to trade immediately.</p>
+                    <br><br>
+
+                    <h3>What is WETH? Why do I need it?</h3>
+                    <p>WETH is the ticker of wrapped Ethereum. Because Ethereum was created before the ERC-20 token format, ETH needs to be temporarily transferred into the same standard as ERC-20 tokens. The smart contracts which enable the trading of these assets need all the tokens to conform to the same standard. Essentially WETH is the format of Ethereum that best enables trading through the NIOdex smart contract. You trade ETH for WETH at a 1:1 basis through a smart contract, then change it back into Ethereum when you withdraw.</p>
+                    <br><br>
+
+                    <h3>How do I know the NIOdex is safe to trade on?</h3>
+                    <p>At no time is any third party in control of your funds. Only once an order executes, your trade will be completed through the NIOdex smart contract and it will facilitate a direct peer-to-peer exchange with your counterparty. The only process that passes through the NIOdex servers is the initial phase of order placement, and not the funds themselves.</p>
+                    <br><br>
+
+                    <h3>What is the 0x Protocol?</h3>
+                    <p>The 0x protocol is a shared liquidity protocol that allows for shared order books across decentralized exchanges that use the protocol. Orders are broadcast by relayers on the 0x network to other exchanges that utilize the protocol. This creates a more substantial liquidity pool across exchanges that use the protocol as orders that are relayed using the network can appear across numerous exchange order books.</p>
+                    <br><br>
+
+                    <h3>What is the native market maker? How do I use it?</h3>
+                    <p>The NIOdex market maker was built using the same technology as our market making app for graphene DEX’s and adapted for the 0x Protocol. It places and fills orders on both sides of the order book within your desired spread and runs automatically. Because market making requires making, filling and cancelling hundreds of orders over a matter of minutes it cannot be done through manual confirmation of each order. To run the market maker on the NIOdex, simply click the tab on the top right of your screen and enter the required information from your Metamask plugin. Market making is not a risk-free activity and it is important that users only leave the amount of funds in their connected Metamask wallet that fall within their risk tolerance for market making.</p>
+                    <br><br>
+
+                    <h3>How are listings on the NIOdex determined?</h3>
+                    <p>The initial listings on the NIOdex were determined by selecting some of the top projects on the Ethereum network and through suggestions made by the Autonio community. Future listings will occur through one of two methods: either a standardized listing fee payable to the Autonio Foundation or winning one of the listing votes by the NIOdex community. Community listing votes will be held at regular intervals and the winner of the round will win a listing on the NIOdex.</p>
+                    <br><br>
+
+                    <h3>How does the community listing vote work?</h3>
+                    <p>Once a listing vote begins NIOX holders will receive a 1:1 airdrop of NIO Listing Tokens (NLTs) for each NIOX token they hold. These tokens can be used to vote in the listing or sold on the open market. A new supply of NLT’s will be generated at the beginning of the next round of community voting. NLT’s are a special limited lifespan token that will only last for 10 days (the duration of each voting period). Three hours before the conclusion of the listing vote, after these tokens will become unusable. </p>
+                    <br><br>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Trade Now -->
+    <section class="now">
+
+            <!-- Top SVG -->
+            <img class="bg-footer" src="./img/svg/bg-footer.svg" alt="">
+    
+            <div class="container">
+                <div class="row">
+    
+                    <!-- Content -->
+                    <div class="now__content col-md-8">
+                        <h2>Trade now on NIOdex, and enjoy:</h2>
+                        <p>Smart trading features, no signup required, friendly user interface, reactive support, and more.</p>
+                    </div>
+    
+                    <!-- Button -->
+                    <div class="now__button col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <button class="button button--type-A">Start trading</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="footer">
+    
+    
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col-lg-2 col-12 text-left text-sm-center mb2">
+                        <img src="./img/svg/logo-niodex--footer.svg" alt="Logo Niodex footer">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="footer__colTitle">
+                            <h3>About</h3>
+                        </div>
+                        <div class="footer__text">
+                            <ul>
+                                <li>Our Story</li>
+                                <li>Team</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="footer__colTitle">
+                            <h3>Product</h3>
+                        </div>
+                        <div class="footer__text">
+                            <ul>
+                                <li>Vote</li>
+                                <li>Get listed</li>
+                                <li>Fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="footer__colTitle">
+                            <h3>Support</h3>
+                        </div>
+                        <div class="footer__text">
+                            <ul>
+                                <li>Help Center</li>
+                                <li>FAQ</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="footer__colTitle">
+                            <h3>Legal</h3>
+                        </div>
+                        <div class="footer__text">
+                            <ul>
+                                <li>Privacy</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer__colTitle">
+                            <h3>Connect with us</h3>
+                        </div>
+                        <div class="footer__social">
+                            <div class="footer__social--icon">
+                                 <img src="./img/svg/icon-discord.svg" alt="Logo Niodex Social Discord">
+                            </div>
+                            <div class="footer__social--icon">
+                                <img src="./img/svg/icon-facebook.svg" alt="Logo Niodex Social Facebook">
+                            </div>
+                            <div class="footer__social--icon">
+                                <img src="./img/svg/icon-twitter.svg" alt="Logo Niodex Social Twitter">
+                            </div>
+                            <div class="footer__social--icon">
+                                <img src="./img/svg/icon-telegram.svg" alt="Logo Niodex Social Telegram">
+                            </div>
+                            <div class="footer__social--icon">
+                                <img src="./img/svg/icon-youtube.svg" alt="Logo Niodex Social Youtube">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Homemade JS -->
+        <script src="js/main.js"></script>
+    
+        <!-- Analytics JUST ADD Your Own UA-XXXXX -->
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            ga('create', 'UA-XXXXX', 'auto');
+            ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+    
+    </html>
