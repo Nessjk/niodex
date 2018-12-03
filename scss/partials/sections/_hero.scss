@@ -48,6 +48,7 @@
                 //transform: scale(1.25);
                 transform: scale(1.08);
                 margin-left: -40%;
+                margin-left: -20%;
 
                 @media (max-width: 1024px) {
                     transform: scale(1.08);
@@ -55,9 +56,10 @@
             
             }
             & > :last-child {
-                position: absolute;
-                margin-left: -8%;
-                transform: scale(1.1);
+                // Hidden for new Hero
+                // position: absolute;
+                // margin-left: -8%;
+                // transform: scale(1.1);
             }
         }
 

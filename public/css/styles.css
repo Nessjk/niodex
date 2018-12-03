@@ -613,14 +613,11 @@ h3 {
           opacity: 0.1; } }
       .hero__content--images > :first-child {
         transform: scale(1.08);
-        margin-left: -40%; }
+        margin-left: -40%;
+        margin-left: -20%; }
         @media (max-width: 1024px) {
           .hero__content--images > :first-child {
             transform: scale(1.08); } }
-      .hero__content--images > :last-child {
-        position: absolute;
-        margin-left: -8%;
-        transform: scale(1.1); }
     @media (max-width: 1024px) {
       .hero__content--text {
         position: absolute;
