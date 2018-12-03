@@ -8,6 +8,8 @@
 
     &__content {
         //padding-bottom: 50px;
+    
+        margin-top: 90px; // Delete this when adding pairs cards back
 
         & > div:first-child {
             @media (min-width: 1025px) { // important one for 1px smooth transition from 1025 to 1024
@@ -520,6 +522,24 @@
                     opacity:0.5;
                 }
             }
+        }
+    }
+
+    &__social {
+        display: flex;
+      
+
+        &--icon {
+            transition: all .3s ease-in-out;
+            
+            &:hover {
+                cursor: pointer;
+                transform: translateY(3px);
+            }
+        }
+
+        &--icon img {
+            width: 40px;
         }
     }
 }

@@ -283,6 +283,9 @@ h3 {
     font-family: "Open Sans", sans-serif;
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px; }
+  .card--type-1 img {
+    width: 50px;
+    height: 50px; }
 
 :root {
   --gutter: 20px; }
@@ -584,46 +587,48 @@ h3 {
   background: #1E2A41;
   min-height: 80vh;
   position: relative; }
-  @media (min-width: 1025px) {
-    .hero__content > div:first-child {
-      justify-content: flex-start !important; } }
-  @media (min-width: 992px) and (max-width: 1024px) {
-    .hero__content {
-      text-align: center;
-      margin: auto; } }
-  @media (max-width: 455px) {
-    .hero__content {
-      padding-bottom: 80px; } }
-  @media (max-width: 400px) {
-    .hero__content {
-      padding-bottom: 180px; } }
-  .hero__content img {
-    height: 80%; }
-  .hero__content--images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    @media (max-width: 1024px) {
-      .hero__content--images {
-        opacity: 0.1; } }
-    .hero__content--images > :first-child {
-      transform: scale(1.08);
-      margin-left: -40%; }
+  .hero__content {
+    margin-top: 90px; }
+    @media (min-width: 1025px) {
+      .hero__content > div:first-child {
+        justify-content: flex-start !important; } }
+    @media (min-width: 992px) and (max-width: 1024px) {
+      .hero__content {
+        text-align: center;
+        margin: auto; } }
+    @media (max-width: 455px) {
+      .hero__content {
+        padding-bottom: 80px; } }
+    @media (max-width: 400px) {
+      .hero__content {
+        padding-bottom: 180px; } }
+    .hero__content img {
+      height: 80%; }
+    .hero__content--images {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
       @media (max-width: 1024px) {
-        .hero__content--images > :first-child {
-          transform: scale(1.08); } }
-    .hero__content--images > :last-child {
-      position: absolute;
-      margin-left: -8%;
-      transform: scale(1.1); }
-  @media (max-width: 1024px) {
-    .hero__content--text {
-      position: absolute;
-      text-align: left; } }
-  @media (max-width: 375px) {
-    .hero__content--text {
-      padding-top: 115px;
-      padding-top: 160px; } }
+        .hero__content--images {
+          opacity: 0.1; } }
+      .hero__content--images > :first-child {
+        transform: scale(1.08);
+        margin-left: -40%; }
+        @media (max-width: 1024px) {
+          .hero__content--images > :first-child {
+            transform: scale(1.08); } }
+      .hero__content--images > :last-child {
+        position: absolute;
+        margin-left: -8%;
+        transform: scale(1.1); }
+    @media (max-width: 1024px) {
+      .hero__content--text {
+        position: absolute;
+        text-align: left; } }
+    @media (max-width: 375px) {
+      .hero__content--text {
+        padding-top: 115px;
+        padding-top: 160px; } }
   .hero__buttons {
     margin-top: 70px; }
     .hero__buttons :first-child {
@@ -967,6 +972,15 @@ h3 {
       .footer__text ul > li:hover {
         cursor: pointer;
         opacity: 0.5; }
+  .footer__social {
+    display: flex; }
+    .footer__social--icon {
+      transition: all .3s ease-in-out; }
+      .footer__social--icon:hover {
+        cursor: pointer;
+        transform: translateY(3px); }
+    .footer__social--icon img {
+      width: 40px; }
 
 @media (max-width: 768px) {
   .footer.col-md-2.col-6 {
@@ -977,11 +991,10 @@ h3 {
   padding-bottom: 100px;
   position: relative; }
   .vote__circle {
-    border-radius: 50%;
-    background: #C6C6C6;
-    height: 80px;
-    width: 80px;
     margin-bottom: 30px; }
+    .vote__circle img {
+      width: 80px;
+      height: 80px; }
   .vote__content {
     min-height: 30vh;
     padding-top: 40px;
@@ -1046,6 +1059,8 @@ h3 {
       flex-direction: column;
       max-width: 400px;
       margin: auto; } }
+  .howTo__icons img {
+    width: 50px; }
 
 .coming,
 .pastVotes {

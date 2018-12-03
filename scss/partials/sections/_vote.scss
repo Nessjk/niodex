@@ -4,11 +4,16 @@
     position: relative;
 
     &__circle {
-        border-radius: 50%;
-        background: #C6C6C6;
-        height: 80px;
-        width: 80px;
+        //border-radius: 50%;
+        //background: #C6C6C6;
+        //height: 80px;
+        //width: 80px;
         margin-bottom: 30px;
+
+        & img {
+            width: 80px;
+            height: 80px;
+        }
     }
 
     &__content {
@@ -100,6 +105,10 @@
             max-width: 400px;
             margin: auto;
         }
+    }
+
+    &__icons img {
+        width: 50px;
     }
 }
 
