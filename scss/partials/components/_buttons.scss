@@ -47,8 +47,8 @@
     background: $button--nav--bg;
 
     &:hover {
-        background: #ffffff alpha 0.1; 
-        color: #ffffff;
+        background: #ffffff alpha 0.1 !important; 
+        color: #ffffff !important;
     }
 }
 

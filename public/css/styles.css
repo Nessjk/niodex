@@ -260,8 +260,8 @@ h3 {
   color: #C0D562 !important;
   background: rgba(192, 213, 98, 0.1); }
   .button--nav:hover {
-    background: #ffffff alpha 0.1;
-    color: #ffffff; }
+    background: #ffffff alpha 0.1 !important;
+    color: #ffffff !important; }
 
 .card--type-1 {
   max-width: 550px;
@@ -975,7 +975,7 @@ h3 {
   .footer__social {
     display: flex; }
     .footer__social--icon {
-      transition: all .3s ease-in-out; }
+      transition: all .2s ease-in-out; }
       .footer__social--icon:hover {
         cursor: pointer;
         transform: translateY(3px); }
@@ -1268,7 +1268,7 @@ h3 {
     border: 2px dashed rgba(255, 255, 255, 0.2);
     text-align: center;
     color: #FFFFFF;
-    transition: background 0.3s ease-in-out; }
+    transition: background 0.2s ease-in-out; }
     .file-area .file-input .success {
       display: none; }
   .file-area:hover .file-input {
