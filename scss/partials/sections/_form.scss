@@ -41,7 +41,7 @@
             padding: 1.75rem 1.5rem;
             outline: none;
             resize: none;
-            color: $white;
+            color: $white !important;
         }
 
         & input:focus, textarea:focus {

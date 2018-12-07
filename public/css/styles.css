@@ -431,6 +431,10 @@ h3 {
     .navigation__logo img {
       width: 205px;
       height: 35px; }
+      @media (max-width: 664px) {
+        .navigation__logo img {
+          width: 175px;
+          height: 35px; } }
   .navigation__items {
     display: flex;
     align-items: center; }
@@ -676,6 +680,9 @@ input#coin_terms {
         padding-top: 160px; } }
   .hero__buttons {
     margin-top: 70px; }
+    @media (max-width: 428px) {
+      .hero__buttons {
+        margin-top: 0; } }
     .hero__buttons :first-child {
       margin-right: 25px; }
       @media (max-width: 455px) {
@@ -904,6 +911,13 @@ input#coin_terms {
         width: 100%;
         width: 80%;
         margin: auto; }
+        @media (max-width: 500px) {
+          .metaMask__content--image img:first-child {
+            width: 100%; } }
+        @media (max-width: 768px) {
+          .metaMask__content--image img:first-child {
+            position: initial;
+            display: block; } }
         @media (min-width: 1600px) {
           .metaMask__content--image img:first-child {
             margin-top: 80px; } }
@@ -1299,7 +1313,7 @@ input#coin_terms {
     padding: 1.75rem 1.5rem;
     outline: none;
     resize: none;
-    color: #FFFFFF; }
+    color: #FFFFFF !important; }
   .fillOutForm form input:focus, .fillOutForm form textarea:focus {
     background-color: #939db1;
     outline: none;

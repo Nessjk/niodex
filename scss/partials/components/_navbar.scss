@@ -19,6 +19,11 @@
         & img {
             width: 205px;
             height: 35px;
+
+            @media (max-width: 664px) {
+                width: 175px;
+                height: 35px;
+            }
         }
     }
 

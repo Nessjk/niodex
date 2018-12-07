@@ -80,6 +80,10 @@
     &__buttons {
         margin-top: 70px;
 
+
+        @media (max-width: 428px) {
+            margin-top: 0;
+        }
       
 
         & :first-child {
@@ -347,6 +351,15 @@
 
                 width: 80%;
                 margin: auto;
+
+                @media (max-width: 500px) {
+                    width: 100%;
+                }
+                
+                @media (max-width: 768px) {
+                    position: initial;
+                    display: block;
+                }
                 
                 @media (min-width: 1600px) {
                     margin-top: 80px;
