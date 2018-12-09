@@ -13,11 +13,12 @@
 select {
     border-radius: 10px!important;
     background-color: #555F73!important;
-    padding: 1.75rem 1.5rem !important;
+    //padding: 1.75rem 1.5rem !important;
     height: 57px!important;
     outline: 0!important;
     border: none !important;
     color: white!important;
+    // -moz-appearance:none;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
