@@ -113,6 +113,7 @@
         width: 100%;
         z-index: 999!important;
         height: 100px;
+        left: 0;
     }
    
 }
@@ -355,7 +356,7 @@
                 @media (max-width: 500px) {
                     width: 100%;
                 }
-                
+
                 @media (max-width: 768px) {
                     position: initial;
                     display: block;
@@ -578,14 +579,14 @@
         & ul {
             list-style: none;
 
-            & > li {
+            & > li a, li {
                 color: $white;
                 font-size: 16px;
                 line-height: 1.8;
 
                 &:hover {
                     cursor: pointer;
-                    opacity:0.5;
+                    //opacity:0.5;
                 }
             }
         }
@@ -620,4 +621,10 @@
 
 .marketMaker__content {
     margin-bottom: 60px;
+}
+
+.footer a {
+    &:hover {
+        opacity: 1;
+    }
 }

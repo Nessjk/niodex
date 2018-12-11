@@ -28,45 +28,49 @@
             </button>
 
 
-            <!-- Navbar -->
-            <div id="navigationBar" class="navigation d-flex justify-content-between align-content-center">
-                <div class="navigation__logo">
-                    <img src="./img/svg/logo-niodex--header.svg" alt="Logo Niodex">
-                </div>
-                <div class="navigation__items">
-                    <ul>
-                        <li>
-                            <a href="www.niodex.com">    
-                            Exchange                            
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/list.html">    
-                            Get listed                            
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/vote.html">    
-                            Vote                            
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/faq.html">    
-                            FAQ                            
-                            </a>
-                        </li>
-                        <li class="button button--nav">
-                            <a href="app.niodex.com" target="blank">
-                                    Start trading
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+             <!-- Navbar -->
+             <nav>
+                    <div class="navigation d-flex justify-content-between align-content-center">
+                        <div class="navigation__logo">
+                            <img src="./img/svg/logo-niodex--header.svg" alt="Logo Niodex Header">
+                        </div>
+                        <div class="navigation__items">
+                                <ul>
+                                        <li>
+                                            <a href="www.niodex.com">    
+                                            Exchange                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/get-listed.html">    
+                                            Get listed                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/vote.html">    
+                                            Vote                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/faq.html">    
+                                            FAQ                            
+                                            </a>
+                                        </li>
+                                        <li id="button--nav" class="button button--nav">
+                                            <a href="app.niodex.com" target="blank">
+                                                    Start trading
+                                            </a>
+                                        </li>
+                                    </ul>
+                        </div>
+                    </div>
+                </nav>
 
         <!-- Hero Content -->
         <div class="hero__content">
+
+          
+
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-6 d-flex flex-column justify-content-center hero__content--images">
 
@@ -79,8 +83,14 @@
 
                     <div class="hero__buttons">
                         <button class="button button--type-A">Start trading</button>
-                        <button class="button button--type-B">Watch it on video ></button>
+                        <a href="#playme">
+                            <button class="button button--type-B">
+                                Watch it on video >
+                            </button>
+                        </a>   
                     </div>
+
+             
 
                 </div>
             </div>
@@ -394,7 +404,7 @@
     </section>
 
     <!-- Fees -->
-    <section class="fees">
+    <section id="fees" class="fees">
         <div class="container">
 
 
@@ -430,8 +440,25 @@
     </section>
 
     <!-- Video Walkthrough -->
+
+     
+
     <section class="walkthrough">
 
+ <!-- Presentation Video -->
+ <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+        <div class="lightbox-container">
+            <div class="lightbox-content">
+
+                <button onclick="hideVideo('video','youtube')" class="lightbox-close">✕</button>
+                <div class="video-container">
+                    <iframe id="youtube" width="560" height="515"src="https://www.youtube.com/embed/n3CRyoJsOU8"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
         <!-- Title -->
         <div class="walkthrough__title text-center">
             <h2>NIOdex video Walkthrough</h2>
@@ -441,7 +468,7 @@
         <!-- Content -->
         <div class="walkthrough__content text-center">
 
-            <img src="./img/svg/video.svg" alt="">
+            <img class="play" id="playme" onclick="revealVideo('video','youtube')" src="./img/svg/video.svg" alt="">
 
         </div>
         <img class="bg-video--big" src="././img/svg/bg-video.svg" alt="Background Video">
@@ -458,7 +485,11 @@
 
             <!-- Button -->
             <div class="buttons text-center">
-                <button class="button button--type-B mx-auto">Visit Help Center</button>
+                <a href="https://helpdesk.auton.io/">
+                    <button class="button button--type-B mx-auto">
+                            Visit Help Center
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -501,8 +532,17 @@
                     </div>
                     <div class="footer__text">
                         <ul>
-                            <li>Our Story</li>
-                            <li>Team</li>
+                            <li>
+                                <a href="https://auton.io/">
+                                        Our Story
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://auton.io/team.php">
+                                      Team
+                                </a>
+                            </li>
+                        
                         </ul>
                     </div>
                 </div>
@@ -512,9 +552,21 @@
                     </div>
                     <div class="footer__text">
                         <ul>
-                            <li>Vote</li>
-                            <li>Get listed</li>
-                            <li>Fees</li>
+                            <li>
+                                <a href="/vote.html">
+                                    Vote
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/get-listed.html">
+                                    Get listed
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#fees">
+                                    Fees
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -524,9 +576,21 @@
                     </div>
                     <div class="footer__text">
                         <ul>
-                            <li>Help Center</li>
-                            <li>FAQ</li>
-                            <li>Contact us</li>
+                            <li>
+                                <a href="https://helpdesk.auton.io/">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/faq.html">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@niodex.com">
+                                    Contact us
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -570,17 +634,55 @@
     <!-- Homemade JS -->
     <script src="js/main.js"></script>
 
-    <!-- Analytics JUST ADD Your Own UA-XXXXX -->
+    <!-- Analytics -->
     <script>
         window.ga = function () {
             ga.q.push(arguments)
         };
         ga.q = [];
         ga.l = +new Date;
-        ga('create', 'UA-XXXXX', 'auto');
+        ga('create', 'UA-118646368-2', 'auto');
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <script>
+
+        // SMOOTH SCROLLING BEHAVIOR FOR ANCHOR TAGS
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+/*
+* LIGHTBOX POPUP VIDEO FOR YOUTUBE
+* @homepage
+*
+*/
+// Lightbox Youtube video
+const playIcon = document.querySelector('.play');
+
+// Function to reveal lightbox and adding YouTube autoplay
+function revealVideo(div, video_id) {
+    var video = document.getElementById(video_id).src;
+    //document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
+    document.getElementById(div).style.display = 'block';
+}
+
+// Hiding the lightbox and removing YouTube autoplay
+function hideVideo(div, video_id) {
+    var video = document.getElementById(video_id).src;
+    var cleaned = video.replace('&autoplay=1', ''); // removing autoplay form url
+
+    document.getElementById(video_id).src = cleaned;
+    document.getElementById(div).style.display = 'none';
+}
+    </script>
 </body>
 
 </html>

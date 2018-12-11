@@ -234,8 +234,9 @@ h3 {
   font-family: "Karla", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.2s ease-in-out; }
-  .button:hover {
+  transition: all .2s ease-in-out; }
+  .button:hover,
+  .button:hover a {
     cursor: pointer; }
   .button:focus, .button :active {
     outline: none; }
@@ -255,13 +256,17 @@ h3 {
     background: #ffffff;
     color: #011625; }
 
-.button--nav {
+li.button.button--nav {
   padding: 8px 26px 8px 26px;
-  color: #C0D562 !important;
-  background: rgba(192, 213, 98, 0.1); }
-  .button--nav:hover {
-    background: #ffffff alpha 0.1 !important;
-    color: #ffffff !important; }
+  background: rgba(192, 213, 98, 0.1) !important; }
+  li.button.button--nav a {
+    color: #C0D562; }
+  li.button.button--nav:hover {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.5 !important; }
+    li.button.button--nav:hover a {
+      opacity: 1 !important;
+      color: #ffffff !important; }
 
 .card--type-1 {
   max-width: 550px;
@@ -598,7 +603,7 @@ h3 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 20px; }
 
-.table td:first-child {
+.table .table-padding td:first-child {
   padding-top: 25px; }
 
 select {
@@ -633,6 +638,60 @@ input, textarea {
 
 input#coin_terms {
   margin-right: 16px; }
+
+.lightbox {
+  background-color: fade(black, 80%);
+  position: absolute;
+  display: none;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 99999; }
+  .lightbox-container {
+    position: relative;
+    max-width: 960px;
+    margin: 7% auto;
+    display: block;
+    padding: 0 3%;
+    height: auto;
+    z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .lightbox-container {
+        margin-top: 10%; } }
+    @media screen and (max-width: 414px) {
+      .lightbox-container {
+        margin-top: 13%; } }
+  .lightbox-content {
+    box-shadow: 0 1px 6px fade(black, 70%); }
+  .lightbox-close {
+    text-transform: uppercase;
+    background: transparent;
+    position: absolute;
+    font-weight: 300;
+    font-size: 12px;
+    display: block;
+    border: none;
+    color: white;
+    top: -22px;
+    right: 3%; }
+
+.video-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 0; }
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }
 
 .hero {
   background: #1E2A41;
@@ -701,7 +760,8 @@ input#coin_terms {
     bottom: -99px;
     width: 100%;
     z-index: 999 !important;
-    height: 100px; }
+    height: 100px;
+    left: 0; }
 
 .hero__content .row > :last-child {
   max-width: 648px; }
@@ -1062,13 +1122,12 @@ input#coin_terms {
     font-size: 16px; }
   .footer__text ul {
     list-style: none; }
-    .footer__text ul > li {
+    .footer__text ul > li a, .footer__text ul li {
       color: #FFFFFF;
       font-size: 16px;
       line-height: 1.8; }
-      .footer__text ul > li:hover {
-        cursor: pointer;
-        opacity: 0.5; }
+      .footer__text ul > li a:hover, .footer__text ul li:hover {
+        cursor: pointer; }
   .footer__social {
     display: flex; }
     .footer__social--icon {
@@ -1085,6 +1144,9 @@ input#coin_terms {
 
 .marketMaker__content {
   margin-bottom: 60px; }
+
+.footer a:hover {
+  opacity: 1; }
 
 .vote {
   background: #1E2A41;
