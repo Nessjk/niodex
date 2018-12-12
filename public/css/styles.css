@@ -30,7 +30,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.5) !important; }
 
 a {
-  color: rgba(255, 255, 255, 0.5); }
+  color: white; }
 
 .underline {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
@@ -258,12 +258,15 @@ h3 {
 
 li.button.button--nav {
   padding: 8px 26px 8px 26px;
-  background: rgba(192, 213, 98, 0.1) !important; }
+  background: rgba(192, 213, 98, 0.1) !important;
+  transition: all .2s ease-in-out; }
   li.button.button--nav a {
-    color: #C0D562; }
+    color: #C0D562;
+    transition: all .2s ease-in-out; }
   li.button.button--nav:hover {
-    background: rgba(255, 255, 255, 0.5);
-    opacity: 0.5 !important; }
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    opacity: 1; }
     li.button.button--nav:hover a {
       opacity: 1 !important;
       color: #ffffff !important; }
@@ -1113,7 +1116,8 @@ input#coin_terms {
 
 .footer {
   background: #1E2A41;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  transition: all .2s ease-in-out; }
   .footer img {
     width: 100px;
     height: 25px; }
@@ -1121,15 +1125,18 @@ input#coin_terms {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px; }
   .footer__text ul {
+    transition: all .2s ease-in-out;
     list-style: none; }
     .footer__text ul > li a, .footer__text ul li {
+      transition: all .2s ease-in-out;
       color: #FFFFFF;
       font-size: 16px;
       line-height: 1.8; }
       .footer__text ul > li a:hover, .footer__text ul li:hover {
         cursor: pointer; }
   .footer__social {
-    display: flex; }
+    display: flex;
+    transition: all .2s ease-in-out; }
     .footer__social--icon {
       transition: all .2s ease-in-out; }
       .footer__social--icon:hover {
